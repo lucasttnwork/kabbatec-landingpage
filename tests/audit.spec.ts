@@ -3,6 +3,11 @@ import { test, expect } from "@playwright/test";
 const routes = [
   { path: "/design-system", name: "design-system" },
   { path: "/grid-preview", name: "grid-preview" },
+  { path: "/hero-preview", name: "hero-preview" },
+  { path: "/problem-preview", name: "problem-preview" },
+  { path: "/solution-preview", name: "solution-preview" },
+  { path: "/methodology-preview", name: "methodology-preview" },
+  { path: "/", name: "home" },
 ];
 
 const viewports = [

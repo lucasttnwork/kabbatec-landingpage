@@ -1,14 +1,20 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 
-type SectionProps = React.HTMLAttributes<HTMLElement>
+type SectionProps = React.HTMLAttributes<HTMLElement> & {
+  alternate?: boolean
+}
 
 const Section = React.forwardRef<HTMLElement, SectionProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, alternate = false, ...props }, ref) => {
     return (
       <section
         ref={ref}
-        className={cn("py-16 md:py-20 lg:py-24", className)}
+        className={cn(
+          "py-16 md:py-24", // 64px / 96px conforme design system
+          alternate && "bg-[#F9FAFB]",
+          className,
+        )}
         {...props}
       />
     );

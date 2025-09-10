@@ -1,0 +1,194 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Elite Core ✓
+          - generic [ref=e10]: First Move ✓
+          - generic [ref=e11]: Two Ases ✓
+        - heading "A diferença entre sua academia personalizada virar realidade e ser destruída por “adaptações” genéricas" [level=1] [ref=e12]
+        - paragraph [ref=e13]: Como a Kabbatec executa projetos únicos de 600 a 1.000m² preservando cada detalhe personalizado em 70 dias, enquanto construtoras tradicionais destroem visões customizadas tentando encaixar tudo no mesmo molde viciado de sempre.
+        - generic [ref=e14]:
+          - button "QUERO MINHA ANÁLISE GRATUITA" [ref=e15] [cursor=pointer]
+          - button "CONHECER CASES" [ref=e16] [cursor=pointer]
+      - generic [ref=e19]:
+        - generic [ref=e20]: 🏗️
+        - paragraph [ref=e21]: Hero Image
+        - paragraph [ref=e22]: Elite Core Academy
+    - img [ref=e26]
+  - generic [ref=e30]:
+    - heading "O problema que ninguém conta" [level=2] [ref=e31]
+    - generic [ref=e32]:
+      - paragraph [ref=e33]: 78% das construtoras tradicionais têm décadas de vícios. Elas “adaptam” seu projeto para encaixar nos métodos que sempre usaram.
+      - paragraph [ref=e34]: O resultado é a simplificação de detalhes críticos do seu projeto, transformando uma visão única em algo genérico e sem o retorno esperado.
+      - paragraph [ref=e35]: O que você precisa é de uma execução que preserve cada detalhe do projeto original, sem atalhos que destroem a sua visão.
+      - paragraph [ref=e36]: "É aqui que a Kabbatec se diferencia: zero vícios antigos, foco em fidelidade absoluta ao projeto e prazo real."
+    - blockquote [ref=e38]: “Elas 'adaptam' seu projeto para caber no molde antigo. Nós preservamos cada detalhe como foi concebido.”
+    - generic [ref=e39]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: 🏗️
+        - generic [ref=e43]: Adaptações genéricas
+        - paragraph [ref=e44]: Forçam o projeto a caber em métodos antigos.
+      - generic [ref=e46]:
+        - generic [ref=e47]: ⚠️
+        - generic [ref=e48]: Simplificação de detalhes
+        - paragraph [ref=e49]: Reduz qualidade e descaracteriza sua visão original.
+      - generic [ref=e51]:
+        - generic [ref=e52]: 📉
+        - generic [ref=e53]: Retorno abaixo do esperado
+        - paragraph [ref=e54]: Impacta a performance e a percepção premium do espaço.
+    - generic [ref=e55]:
+      - link "Ver Nossa Metodologia" [ref=e56] [cursor=pointer]:
+        - /url: "#methodology"
+      - link "Ver Cases de Sucesso" [ref=e57] [cursor=pointer]:
+        - /url: "#cases"
+  - generic [ref=e60]:
+    - heading "Nós fazemos diferente" [level=2] [ref=e61]
+    - generic [ref=e62]:
+      - paragraph [ref=e63]: "Somos a Kabbatec: a construtora que não herda problemas antigos."
+      - paragraph [ref=e64]: Enquanto construtoras veteranas carregam décadas de “jeitinhos” e vícios, nós executamos com metodologia pura das grandes redes. Sem improvisação. Sem simplificação. Sem “adaptações” que destroem sua visão.
+      - paragraph [ref=e65]: "Nossa promessa: Sua academia executada exatamente como foi projetada, preservando cada detalhe personalizado em 70 dias."
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - heading "Fernando + Silvio" [level=3] [ref=e68]
+        - paragraph [ref=e69]: Competência técnica especializada + relacionamentos estratégicos no mercado fitness.
+        - generic [ref=e70]:
+          - generic [ref=e73]: Engenharia especializada em fitness
+          - generic [ref=e76]: Rede de fornecedores premium
+          - generic [ref=e79]: Controle rigoroso de qualidade
+      - generic [ref=e82]:
+        - generic [ref=e83]: 👥
+        - paragraph [ref=e84]: Fernando & Silvio
+        - paragraph [ref=e85]: Líderes Kabbatec
+  - generic [ref=e88]:
+    - generic [ref=e89]:
+      - heading "Nossa metodologia em 4 pilares" [level=2] [ref=e90]
+      - paragraph [ref=e91]: Aprovada por Raquel Kabbani, arquiteta das maiores redes fitness do Brasil
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95]: 🎯
+          - generic [ref=e96]: Fidelidade ao Projeto
+        - paragraph [ref=e98]: Execução fiel ao projeto original, sem atalhos que destroem sua visão única.
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: 🚀
+          - generic [ref=e102]: Início Imediato + 70 dias
+        - paragraph [ref=e104]: Cronograma realista com início imediato e entrega em 70 dias úteis.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: ♻️
+          - generic [ref=e108]: Zero Retrabalho
+        - paragraph [ref=e110]: Processos validados e equipe especializada para evitar retrabalho custoso.
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - generic [ref=e113]: 🏅
+          - generic [ref=e114]: Padrão Grandes Redes
+        - paragraph [ref=e116]: Acabamento e padrões equivalentes às maiores redes do setor fitness.
+    - generic [ref=e117]:
+      - link "Ver Cases de Sucesso →" [ref=e118] [cursor=pointer]:
+        - /url: "#cases"
+      - link "Sistema de Design" [ref=e119] [cursor=pointer]:
+        - /url: /design-system
+  - generic [ref=e122]:
+    - generic [ref=e123]:
+      - heading "Cases de Sucesso" [level=2] [ref=e124]
+      - paragraph [ref=e125]: Projetos executados com excelência e fidelidade aos detalhes
+    - generic [ref=e126]:
+      - button "Ver detalhes do case Elite Core Academy" [ref=e128] [cursor=pointer]:
+        - generic [ref=e129] [cursor=pointer]:
+          - 'img "Erro ao carregar imagem: Elite Core Academy - Academia premium executada pela Kabbatec" [ref=e130] [cursor=pointer]':
+            - generic [ref=e131] [cursor=pointer]:
+              - img [ref=e132] [cursor=pointer]
+              - paragraph [ref=e134] [cursor=pointer]: Imagem indisponível
+          - generic [ref=e136] [cursor=pointer]: ✅ Concluído
+          - generic [ref=e139] [cursor=pointer]: 📸 4 fotos
+        - generic [ref=e140] [cursor=pointer]:
+          - generic [ref=e141] [cursor=pointer]:
+            - paragraph [ref=e142] [cursor=pointer]: Elite Core
+            - heading "Elite Core Academy" [level=3] [ref=e143] [cursor=pointer]
+          - paragraph [ref=e144] [cursor=pointer]: Academia premium executada com acabamento de alto padrão, equipamentos especializados e layout otimizado para experiência fitness completa.
+          - generic [ref=e145] [cursor=pointer]:
+            - generic [ref=e146] [cursor=pointer]:
+              - generic [ref=e147] [cursor=pointer]: 📏
+              - generic [ref=e148] [cursor=pointer]: 600m²
+            - generic [ref=e149] [cursor=pointer]:
+              - generic [ref=e150] [cursor=pointer]: ⏱️
+              - generic [ref=e151] [cursor=pointer]: 70 dias
+          - generic [ref=e152] [cursor=pointer]:
+            - generic [ref=e153] [cursor=pointer]: "#Premium"
+            - generic [ref=e154] [cursor=pointer]: "#Equipamentos"
+            - generic [ref=e155] [cursor=pointer]: "#Fitness"
+      - button "Ver detalhes do case First Move Studio" [ref=e157] [cursor=pointer]:
+        - generic [ref=e158] [cursor=pointer]:
+          - generic:
+            - img "First Move Studio - Estúdio moderno executado pela Kabbatec"
+          - generic [ref=e161] [cursor=pointer]: ✅ Concluído
+          - generic [ref=e164] [cursor=pointer]: 📸 3 fotos
+        - generic [ref=e165] [cursor=pointer]:
+          - generic [ref=e166] [cursor=pointer]:
+            - paragraph [ref=e167] [cursor=pointer]: First Move
+            - heading "First Move Studio" [level=3] [ref=e168] [cursor=pointer]
+          - paragraph [ref=e169] [cursor=pointer]: Estúdio moderno com conceito inovador de treinamento funcional, executado com materiais premium e design arquitetônico personalizado.
+          - generic [ref=e170] [cursor=pointer]:
+            - generic [ref=e171] [cursor=pointer]:
+              - generic [ref=e172] [cursor=pointer]: 📏
+              - generic [ref=e173] [cursor=pointer]: 450m²
+            - generic [ref=e174] [cursor=pointer]:
+              - generic [ref=e175] [cursor=pointer]: ⏱️
+              - generic [ref=e176] [cursor=pointer]: 65 dias
+          - generic [ref=e177] [cursor=pointer]:
+            - generic [ref=e178] [cursor=pointer]: "#Moderno"
+            - generic [ref=e179] [cursor=pointer]: "#Funcional"
+            - generic [ref=e180] [cursor=pointer]: "#Personalizado"
+      - button "Ver detalhes do case Two Ases Fitness" [ref=e182] [cursor=pointer]:
+        - generic [ref=e183] [cursor=pointer]:
+          - generic:
+            - img "Two Ases Fitness - Rede premium executada pela Kabbatec"
+          - generic [ref=e186] [cursor=pointer]: ✅ Concluído
+          - generic [ref=e189] [cursor=pointer]: 📸 5 fotos
+        - generic [ref=e190] [cursor=pointer]:
+          - generic [ref=e191] [cursor=pointer]:
+            - paragraph [ref=e192] [cursor=pointer]: Two Ases
+            - heading "Two Ases Fitness" [level=3] [ref=e193] [cursor=pointer]
+          - paragraph [ref=e194] [cursor=pointer]: Rede de academias premium com identidade visual forte, executadas com padrão de qualidade excepcional e atenção aos detalhes.
+          - generic [ref=e195] [cursor=pointer]:
+            - generic [ref=e196] [cursor=pointer]:
+              - generic [ref=e197] [cursor=pointer]: 📏
+              - generic [ref=e198] [cursor=pointer]: 800m²
+            - generic [ref=e199] [cursor=pointer]:
+              - generic [ref=e200] [cursor=pointer]: ⏱️
+              - generic [ref=e201] [cursor=pointer]: 75 dias
+          - generic [ref=e202] [cursor=pointer]:
+            - generic [ref=e203] [cursor=pointer]: "#Rede"
+            - generic [ref=e204] [cursor=pointer]: "#Premium"
+            - generic [ref=e205] [cursor=pointer]: "#Identidade"
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - generic [ref=e209]: "3"
+        - paragraph [ref=e210]: Projetos Concluídos
+      - generic [ref=e211]:
+        - generic [ref=e212]: 617m²
+        - paragraph [ref=e213]: Área Média
+      - generic [ref=e214]:
+        - generic [ref=e215]: "70"
+        - paragraph [ref=e216]: Dias Médios
+      - generic [ref=e217]:
+        - generic [ref=e218]: 100%
+        - paragraph [ref=e219]: Satisfação
+  - generic [ref=e224] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e225] [cursor=pointer]:
+      - img [ref=e226] [cursor=pointer]
+    - generic [ref=e229] [cursor=pointer]:
+      - button "Open issues overlay" [ref=e230] [cursor=pointer]:
+        - generic [ref=e231] [cursor=pointer]:
+          - generic [ref=e232] [cursor=pointer]: "0"
+          - generic [ref=e233] [cursor=pointer]: "1"
+        - generic [ref=e234] [cursor=pointer]: Issue
+      - button "Collapse issues badge" [ref=e235] [cursor=pointer]:
+        - img [ref=e236] [cursor=pointer]
+  - alert [ref=e238]
+```

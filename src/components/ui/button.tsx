@@ -10,13 +10,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+          // Primário: gradiente #F59E0B→#D97706
+          "bg-gradient-to-r from-[#F59E0B] to-[#D97706] text-white shadow-sm hover:from-[#f6ae2e] hover:to-[#c76a05] active:opacity-95",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+          // Secundário: borda #1E40AF, texto primário, fundo transparente com hover sutil
+          "border border-[#1E40AF] text-[#1E40AF] bg-transparent hover:bg-[#1E40AF]/5 active:bg-[#1E40AF]/10 shadow-xs",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
@@ -39,11 +41,14 @@ function Button({
   className,
   variant,
   size,
+  isLoading,
   asChild = false,
+  disabled,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
+    isLoading?: boolean
   }) {
   const Comp = asChild ? Slot : "button"
 
@@ -51,8 +56,18 @@ function Button({
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
+      aria-busy={isLoading || undefined}
+      aria-disabled={isLoading ? true : undefined}
+      disabled={Boolean(disabled) || Boolean(isLoading)}
       {...props}
-    />
+    >
+      {isLoading && (
+        <span className="inline-flex items-center" aria-hidden>
+          <span className="mr-2 inline-block size-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+        </span>
+      )}
+      {props.children}
+    </Comp>
   )
 }
 
