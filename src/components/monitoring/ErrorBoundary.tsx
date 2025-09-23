@@ -121,7 +121,7 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
 
 // Hook para error reporting manual
 export function useErrorReporting() {
-  const reportError = React.useCallback((error: Error, context?: Record<string, any>) => {
+  const reportError = React.useCallback((error: Error, context?: Record<string, unknown>) => {
     if (monitoringConfig.errorTracking.enabled) {
       console.error('Manual error report:', error, context);
 

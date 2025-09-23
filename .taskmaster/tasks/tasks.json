@@ -1,0 +1,1206 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Auditoria de Copy: Hero Section - Verificar conformidade com copy aprovada",
+        "description": "Auditar a seção Hero para garantir conformidade total com a copy definida em kabbatec_landing.md. Verificar headline principal, subheadline, texto de apoio e CTAs.",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "details": "SEÇÃO 1: ABERTURA (HERO) - Copy Original:\n\n**Headline Principal:** \"Para visionários que não aceitam 'mais ou menos'\"\n\n**Subheadline:** Elite Core sabia. First Move sabia. Two Ases sabia. Existe uma diferença entre querer e conseguir.\n\n**Texto de Apoio:** Alguns constroem academias. Nós criamos referências.\n\n**CTA Principal:** Sua visão merece este cuidado!\n\n**CTA Secundário:** Conheça o padrão reconhecido\n\nVerificar se todos esses elementos estão presentes e fielmente reproduzidos na seção Hero atual.",
+        "testStrategy": "Comparar linha por linha o texto atual da HeroSection com a copy original. Documentar qualquer divergência, texto adicionado ou removido. Garantir que a voz de marca está preservada.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Mapear componente Hero Section atual e identificar estrutura",
+            "description": "Localizar e analisar o componente HeroSection atual, documentando sua estrutura, props, e elementos textuais existentes.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Comparar headline principal: verificar se é exatamente 'Para visionários que não aceitam mais ou menos'",
+            "description": "Verificar se a headline principal está exatamente como definido na copy original, incluindo aspas e pontuação.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Validar subheadline: Elite Core sabia. First Move sabia. Two Ases sabia. + continuação",
+            "description": "Confirmar se a subheadline menciona especificamente os três cases (Elite Core, First Move, Two Ases) e termina com 'Existe uma diferença entre querer e conseguir.'",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Verificar texto de apoio: 'Alguns constroem academias. Nós criamos referências.'",
+            "description": "Validar se o texto de apoio está exato conforme copy original, mantendo o contraste 'alguns/nós' e 'constroem/criamos'.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Auditar CTAs: principal 'Sua visão merece este cuidado!' e secundário 'Conheça o padrão reconhecido'",
+            "description": "Verificar se ambos os CTAs estão presentes com textos exatos, incluindo pontuação e hierarquia visual correta.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Documentar divergências encontradas e criar plano de correção",
+            "description": "Compilar todas as divergências encontradas e criar um plano detalhado de correções necessárias para conformidade total.",
+            "status": "done",
+            "dependencies": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Restaurar Copy: Observação Íntima - Implementar copy original completa",
+        "description": "Substituir completamente o conteúdo atual da seção Observação Íntima pela copy original definida em kabbatec_landing.md, preservando a voz íntima e o storytelling autêntico.",
+        "status": "done",
+        "dependencies": [
+          1
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 2: OBSERVAÇÃO ÍNTIMA - Copy Original Completa:\n\n**Headline:** \"Ontem, visitando a Two Ases em Moema, notei algo curioso\"\n\n**Copy:** Os alunos nem percebem conscientemente. Mas sentem.\n\nÉ aquela sensação indefinível quando você entra em um espaço e pensa: \"isso é diferente\". Cada detalhe sussurra excelência. Cada acabamento respira cuidado. Cada escolha declara: aqui, perfeccionismo não é opcional.\n\nO dono da Two Ases me disse algo revelador:\n\n*\"Pela primeira vez, alguém que não precisou de explicações.\"*\n\nEntendemos visionários porque pensamos como eles.\n\nFernando Reis não é apenas engenheiro — é alguém que vê o que você vê.\n\nSilvio não é apenas parceiro — é quem protege sua visão até o fim.\n\n**A diferença que se sente antes mesmo de notar.**\n\nO conteúdo atual está muito genérico e perdeu a intimidade e especificidade da copy original.",
+        "testStrategy": "Implementar exatamente o texto original, palavra por palavra. Manter a estrutura narrativa íntima. Testar se a copy transmite a observação pessoal e o conhecimento íntimo do negócio.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Analisar componente ObservacaoIntimaSection atual e estrutura de conteúdo",
+            "description": "Mapear o componente atual, identificar como o conteúdo está estruturado e quais elementos precisam ser substituídos.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline íntima: 'Ontem, visitando a Two Ases em Moema, notei algo curioso'",
+            "description": "Substituir headline atual por essa observação pessoal específica que estabelece o tom íntimo e conhecedor.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Restaurar copy sobre percepção sutil: 'Os alunos nem percebem conscientemente. Mas sentem.'",
+            "description": "Implementar o primeiro parágrafo que captura a essência da percepção sutil da excelência.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Implementar descrição sensorial completa: 'É aquela sensação indefinível...' até '...perfeccionismo não é opcional'",
+            "description": "Restaurar a descrição sensorial detalhada que descreve como a excelência é percebida intuitivamente.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Adicionar depoimento autêntico: 'Pela primeira vez, alguém que não precisou de explicações'",
+            "description": "Implementar a citação específica do dono da Two Ases com formatação de depoimento autêntico.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Apresentar Fernando Reis e Silvio: entendimento visionário e proteção da visão",
+            "description": "Implementar os parágrafos que apresentam Fernando e Silvio como protagonistas que entendem visionários.",
+            "status": "done",
+            "dependencies": [
+              5
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Finalizar com insight principal: 'A diferença que se sente antes mesmo de notar'",
+            "description": "Implementar o fechamento que cristaliza o conceito central da observação íntima.",
+            "status": "done",
+            "dependencies": [
+              6
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Implementar design premium que serve à copy íntima",
+            "description": "Criar layout minimalista e elegante que potencializa a intimidade da copy sem competir com ela.",
+            "status": "done",
+            "dependencies": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Restaurar Copy: O Inimigo Comum - Implementar copy sobre o problema real",
+        "description": "Substituir a seção de problemas atual pela copy original 'O Inimigo Comum', que aborda especificamente os problemas dos visionários com fornecedores que não entendem sua visão.",
+        "status": "done",
+        "dependencies": [
+          2
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 3: O INIMIGO COMUM - Copy Original:\n\n**Headline:** \"Por que algumas academias viram referência e outras passam despercebidas?\"\n\n**Copy:** Você já sabe a resposta.\n\nÉ a diferença entre aceitar \"vai ficar bom\" e exigir \"como deveria ser sempre\". Entre fornecedores que fazem o combinado e parceiros que entendem o não-dito. Entre construir um espaço e criar um padrão.\n\nQuantas vezes você explicou sua visão e recebeu de volta... uma versão diluída?\n\nQuantas concessões você fez porque \"assim também funciona\"?\n\nQuantas noites você pensou: \"não era bem isso que eu imaginava\"?\n\n**Visionários merecem mais que promessas.**\n\nMerecem parceiros que protegem sua visão como se fosse deles.\n\nPorque no final, seus concorrentes vão estudar o que você criou.\n\nOu vão ignorar.\n\nA escolha acontece agora.\n\nA copy atual está muito genérica e não aborda o problema específico dos visionários.",
+        "testStrategy": "Verificar se a copy captura a frustração específica de visionários com fornecedores. Manter o tom íntimo e específico. Testar se questiona diretamente o leitor sobre suas experiências.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Mapear componente ProblemSection atual e identificar elementos a substituir",
+            "description": "Analisar a estrutura atual da seção de problemas, identificando todos os elementos que precisam ser substituídos pela copy original.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline questionadora: 'Por que algumas academias viram referência e outras passam despercebidas?'",
+            "description": "Substituir headline genérica por essa pergunta específica que estabelece o dilema central dos visionários.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Implementar resposta direta: 'Você já sabe a resposta'",
+            "description": "Adicionar essa afirmação direta que cria cumplicidade com o leitor visionário.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Detalhar as diferenças fundamentais: aceitar vs exigir, fornecedores vs parceiros, construir vs criar",
+            "description": "Implementar os contrastes específicos que definem a diferença entre 'mais ou menos' e excelência.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Adicionar sequência de perguntas pessoais: visão diluída, concessões, decepções",
+            "description": "Implementar as três perguntas retóricas que tocam diretamente nas frustrações dos visionários.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Destacar declaração central: 'Visionários merecem mais que promessas'",
+            "description": "Implementar essa declaração de valor com destaque visual que afirma o merecimento dos visionários.",
+            "status": "done",
+            "dependencies": [
+              5
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Explicar o que merecem: parceiros que protegem a visão",
+            "description": "Detalhar o contraste entre promessas vazias e parceiros verdadeiros que protegem a visão.",
+            "status": "done",
+            "dependencies": [
+              6
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Finalizar com urgência: consequências e escolha",
+            "description": "Implementar o fechamento sobre concorrentes estudando vs ignorando, criando urgência na decisão.",
+            "status": "done",
+            "dependencies": [
+              7
+            ]
+          },
+          {
+            "id": 9,
+            "title": "Criar design que potencializa a tensão emocional da copy",
+            "description": "Desenvolver layout e tipografia que amplificam o impacto emocional das frustrações e aspirações dos visionários.",
+            "status": "done",
+            "dependencies": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Restaurar Copy: Cases que Falam Por Si - Implementar stories autênticos",
+        "description": "Substituir o conteúdo atual dos cases pela copy original que conta stories específicos da Elite Core, First Move e Two Ases com os detalhes íntimos e resultados reais.",
+        "status": "done",
+        "dependencies": [
+          3
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 4: CASES QUE FALAM POR SI - Copy Original:\n\n**Headline:** \"Alguns resultados você não precisa explicar. Apenas existem.\"\n\n**Card 1: Elite Core**\n*\"Não queria ser mais uma. Hoje é a única.\"*\n\nQuando conhecemos a visão da Elite Core, entendemos: isso não é sobre construir uma academia. É sobre estabelecer o novo padrão de Vila Olímpia. Cada centímetro curado. Cada material questionado. Cada detalhe elevado.\n\n**Resultado:** Referência absoluta. Ponto.\n\n**Card 2: First Move**\n*\"Reinventou o conceito antes mesmo de abrir.\"*\n\nFirst Move tinha uma obsessão: criar algo que fizesse profissionais de alta performance pararem e pensarem \"finalmente\". Não explicamos como fazer. Nós fizemos.\n\n**Resultado:** Vila Olímpia já considera o padrão.\n\n**Card 3: Two Ases**\n*\"Nove alunos por horário. Moema entendeu.\"*\n\nDensidade premium não se explica, se sente. Two Ases precisava que cada detalhe justificasse o preço. E cada detalhe justifica.\n\n**Resultado:** Concorrentes mandam equipes para \"entender como\".\n\nA copy atual não tem a especificidade e intimidade dos cases reais.",
+        "testStrategy": "Verificar se cada case tem a citação específica, o contexto íntimo e o resultado concreto. Manter a linguagem observacional e os detalhes específicos de cada projeto.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Analisar componente CasesSection atual e estrutura de cards",
+            "description": "Mapear a seção de cases atual, identificando estrutura de cards, imagens e textos que precisam ser atualizados.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline de resultados: 'Alguns resultados você não precisa explicar. Apenas existem.'",
+            "description": "Substituir headline genérica por essa afirmação de confiança sobre resultados evidentes.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Criar Card Elite Core: 'Não queria ser mais uma. Hoje é a única.'",
+            "description": "Implementar card completo da Elite Core com citação, story íntimo e resultado específico sobre Vila Olímpia.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Detalhar story Elite Core: padrão Vila Olímpia, cada centímetro curado",
+            "description": "Implementar o contexto específico sobre estabelecer novo padrão e obsessão por cada detalhe.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Destacar resultado Elite Core: 'Referência absoluta. Ponto.'",
+            "description": "Implementar o resultado definitivo com a assertividade característica da copy.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Criar Card First Move: 'Reinventou o conceito antes mesmo de abrir.'",
+            "description": "Implementar card completo da First Move com foco na reinvenção conceitual.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Detalhar story First Move: obsessão por fazer profissionais pensarem 'finalmente'",
+            "description": "Implementar o contexto específico sobre criar algo definitivo para alta performance.",
+            "status": "done",
+            "dependencies": [
+              6
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Destacar resultado First Move: 'Vila Olímpia já considera o padrão.'",
+            "description": "Implementar o resultado que estabelece reconhecimento imediato da região.",
+            "status": "done",
+            "dependencies": [
+              7
+            ]
+          },
+          {
+            "id": 9,
+            "title": "Criar Card Two Ases: 'Nove alunos por horário. Moema entendeu.'",
+            "description": "Implementar card da Two Ases com foco na densidade premium e reconhecimento de Moema.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 10,
+            "title": "Detalhar story Two Ases: densidade premium que se sente, cada detalhe justifica o preço",
+            "description": "Implementar o contexto sobre valor premium sendo justificado por cada elemento.",
+            "status": "done",
+            "dependencies": [
+              9
+            ]
+          },
+          {
+            "id": 11,
+            "title": "Destacar resultado Two Ases: 'Concorrentes mandam equipes para entender como'",
+            "description": "Implementar o resultado que mostra o interesse dos concorrentes em estudar o projeto.",
+            "status": "done",
+            "dependencies": [
+              10
+            ]
+          },
+          {
+            "id": 12,
+            "title": "Desenvolver design premium para cards que honra cada story",
+            "description": "Criar layout sofisticado que dá destaque apropriado a cada case, com hierarquia visual que enfatiza citações e resultados.",
+            "status": "done",
+            "dependencies": [
+              5,
+              8,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Restaurar Copy: O Padrão Kabbatec - Implementar processo sem concessões",
+        "description": "Substituir o conteúdo atual pela copy original do Padrão Kabbatec, focando no processo sem concessões e na curadoria pessoal de Fernando e Silvio.",
+        "status": "done",
+        "dependencies": [
+          4
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 5: O PADRÃO KABBATEC - Copy Original:\n\n**Headline:** \"Da visão à realidade, sem concessões\"\n\n**Copy Principal:** Existe um padrão que perfeccionistas reconhecem.\n\nNão é sobre materiais caros — é sobre os materiais certos.\n\nNão é sobre fazer rápido — é sobre fazer uma vez, perfeito.\n\nNão é sobre impressionar — é sobre o resultado falar por si.\n\n**O Processo (cards minimalistas):**\n\n**1. Curadoria Pessoal**\nFernando e Silvio em cada projeto. Sem intermediários. Sem telefone sem fio. Sua visão, protegida.\n\n**2. Padrão Inegociável**\n\"Mais ou menos\" não existe no nosso vocabulário. Se não está perfeito, refazemos. Simples assim.\n\n**3. Você Sabe Tudo. Sempre.**\nTransparência absoluta. Cada decisão. Cada mudança. Cada detalhe. Como deve ser.\n\n**4. Continuidade Kabbani**\nO mesmo padrão que criou as referências que você admira. De Raquel Kabbani à Kabbatec.\n\nA copy atual perdeu a especificidade do processo e dos protagonistas.",
+        "testStrategy": "Verificar se Fernando e Silvio são mencionados especificamente. Manter a linguagem de padrão e perfeição. Testar se a continuidade Kabbani está presente.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Mapear componente PadraoKabbatecSection atual e estrutura de processo",
+            "description": "Analisar seção atual do padrão, identificando elementos que precisam ser substituídos pela copy original específica.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline definitiva: 'Da visão à realidade, sem concessões'",
+            "description": "Substituir headline atual por essa declaração que estabelece o compromisso total com a visão original.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Estabelecer copy principal: 'Existe um padrão que perfeccionistas reconhecem'",
+            "description": "Implementar a abertura que estabelece a existência de um padrão reconhecível pelos perfeccionistas.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Detalhar filosofia dos contrastes: materiais certos vs caros, perfeição vs velocidade, resultado vs impressão",
+            "description": "Implementar os três contrastes fundamentais que definem a filosofia Kabbatec.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Criar Card 1 - Curadoria Pessoal: Fernando e Silvio em cada projeto",
+            "description": "Implementar card específico destacando a presença pessoal dos protagonistas em cada projeto.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Criar Card 2 - Padrão Inegociável: 'Mais ou menos não existe no nosso vocabulário'",
+            "description": "Implementar card sobre a recusa total de aceitar qualquer coisa que não seja perfeita.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Criar Card 3 - Transparência Total: 'Você Sabe Tudo. Sempre.'",
+            "description": "Implementar card sobre comunicação completa e transparência absoluta no processo.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Criar Card 4 - Continuidade Kabbani: legado de Raquel Kabbani à Kabbatec",
+            "description": "Implementar card que estabelece a continuidade do padrão reconhecido de Raquel Kabbani.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 9,
+            "title": "Remover emojis e implementar ícones vetoriais premium",
+            "description": "Substituir emojis atuais por ícones vetoriais elegantes que reforçam o posicionamento premium.",
+            "status": "done",
+            "dependencies": [
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": 10,
+            "title": "Desenvolver layout minimalista que honra a filosofia do padrão",
+            "description": "Criar design clean e elegante que reflete a própria filosofia de perfeccionismo descrita na copy.",
+            "status": "done",
+            "dependencies": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Restaurar Copy: Prova Social Sutil - Implementar depoimentos autênticos",
+        "description": "Substituir depoimentos genéricos pela copy original de prova social sutil, com depoimentos específicos e autênticos dos clientes reais.",
+        "status": "done",
+        "dependencies": [
+          5
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 6: PROVA SOCIAL SUTIL - Copy Original:\n\n**Headline:** \"O que dizem quando pensam que não estamos ouvindo\"\n\n**Depoimentos (formato citação):**\n\n*\"Meus concorrentes estudam o que criamos juntos.\"*\n— Fundador, Elite Core\n\n*\"Finalmente o padrão que eu esperava encontrar.\"*\n— CEO, First Move\n\n*\"Dormi tranquilo durante toda a obra. Primeira vez.\"*\n— Proprietário, Two Ases\n\n*\"Cada detalhe pensado para impressionar. E impressiona.\"*\n— Sócio, projeto em andamento\n\nA copy atual não tem a autenticidade e especificidade dos depoimentos reais.",
+        "testStrategy": "Verificar se os depoimentos são exatamente os originais com as atribuições corretas. Manter o formato de citação e a credibilidade específica de cada cliente.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Analisar componente ProvaSocialSection atual e estrutura de depoimentos",
+            "description": "Mapear a seção atual de prova social, identificando como os depoimentos estão estruturados e formatados.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline íntima: 'O que dizem quando pensam que não estamos ouvindo'",
+            "description": "Substituir headline genérica por essa que sugere autenticidade e espontaneidade dos depoimentos.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Implementar depoimento Elite Core: 'Meus concorrentes estudam o que criamos juntos'",
+            "description": "Adicionar depoimento específico do Fundador da Elite Core sobre concorrentes estudando o projeto.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Implementar depoimento First Move: 'Finalmente o padrão que eu esperava encontrar'",
+            "description": "Adicionar depoimento específico do CEO da First Move sobre encontrar o padrão esperado.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Implementar depoimento Two Ases: 'Dormi tranquilo durante toda a obra. Primeira vez.'",
+            "description": "Adicionar depoimento específico do Proprietário da Two Ases sobre tranquilidade durante a obra.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Implementar depoimento projeto em andamento: 'Cada detalhe pensado para impressionar. E impressiona.'",
+            "description": "Adicionar depoimento do Sócio de projeto atual sobre atenção aos detalhes que realmente impressionam.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Garantir formatação autêntica de citações com atribuições específicas",
+            "description": "Implementar formatação visual que honra cada depoimento com atribuições específicas de cargo e empresa.",
+            "status": "done",
+            "dependencies": [
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Criar design sutil que deixa os depoimentos falarem por si",
+            "description": "Desenvolver layout elegante e discreto que dá protagonismo total aos depoimentos autênticos.",
+            "status": "done",
+            "dependencies": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Restaurar Copy: A Matemática do Valor - Implementar copy sobre custo de aceitar 'mais ou menos'",
+        "description": "Substituir métricas genéricas pela copy original sobre o custo real de aceitar 'mais ou menos' vs investir no padrão correto.",
+        "status": "done",
+        "dependencies": [
+          6
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 7: A MATEMÁTICA DO VALOR - Copy Original:\n\n**Headline:** \"Quanto custa aceitar 'mais ou menos'?\"\n\n**Copy:** Você conhece o preço real:\n\n- Clientes que entram e não sentem a diferença\n• Concorrentes que não se intimidam\n• Reformas constantes porque \"ficou bom\" envelhece rápido\n• A sensação permanente de \"poderia ter sido melhor\"\n\nUm projeto Kabbatec não é um custo.\n\nÉ o investimento em se tornar referência.\n\n**R$ 2 milhões bem investidos > R$ 1 milhão desperdiçado em \"mais ou menos\"**\n\nE você sabe que é verdade.\n\nA copy atual não aborda o custo emocional e financeiro de aceitar 'mais ou menos'.",
+        "testStrategy": "Verificar se a copy aborda os custos específicos listados. Manter a comparação de investimento vs desperdício. Testar se a linguagem ressoa com o público premium.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Mapear componente MatematicaValorSection atual e estrutura de conteúdo",
+            "description": "Analisar seção atual, identificando métricas genéricas que precisam ser substituídas pela copy original específica.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline provocativa: 'Quanto custa aceitar mais ou menos?'",
+            "description": "Substituir headlines genéricas por essa pergunta direta que questiona o custo real da mediocridade.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Estabelecer cumplicidade: 'Você conhece o preço real'",
+            "description": "Implementar abertura que cria cumplicidade com visionários que já experimentaram os custos da mediocridade.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Listar custos específicos: clientes que não sentem diferença",
+            "description": "Implementar primeiro custo específico sobre clientes que entram e não percebem valor diferenciado.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Detalhar custo competitivo: concorrentes que não se intimidam",
+            "description": "Implementar segundo custo sobre falta de intimidação por parte dos concorrentes.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Explicar custo de manutenção: reformas constantes porque 'ficou bom' envelhece rápido",
+            "description": "Implementar terceiro custo sobre necessidade de reformas frequentes quando o padrão é apenas 'bom'.",
+            "status": "done",
+            "dependencies": [
+              5
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Destacar custo emocional: sensação permanente de 'poderia ter sido melhor'",
+            "description": "Implementar quarto custo sobre o peso emocional de saber que não se atingiu a excelência.",
+            "status": "done",
+            "dependencies": [
+              6
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Reposicionar investimento: 'Um projeto Kabbatec não é um custo. É o investimento em se tornar referência.'",
+            "description": "Implementar mudança de perspectiva que transforma custo em investimento estratégico.",
+            "status": "done",
+            "dependencies": [
+              7
+            ]
+          },
+          {
+            "id": 9,
+            "title": "Apresentar comparação definitiva: R$ 2 milhões bem investidos > R$ 1 milhão desperdiçado",
+            "description": "Implementar comparação financeira concreta que demonstra o valor real do investimento correto.",
+            "status": "done",
+            "dependencies": [
+              8
+            ]
+          },
+          {
+            "id": 10,
+            "title": "Finalizar com verdade incontestável: 'E você sabe que é verdade'",
+            "description": "Implementar fechamento que apela para a experiência e conhecimento íntimo do leitor visionário.",
+            "status": "done",
+            "dependencies": [
+              9
+            ]
+          },
+          {
+            "id": 11,
+            "title": "Criar design que visualiza o contraste entre custo e investimento",
+            "description": "Desenvolver layout que torna tangível a diferença entre desperdiçar em mediocridade e investir em excelência.",
+            "status": "done",
+            "dependencies": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Restaurar Copy: Convite Seletivo - Implementar copy de exclusividade e seleção",
+        "description": "Substituir CTA genérico pela copy original do convite seletivo, estabelecendo critérios claros e exclusividade do serviço.",
+        "status": "done",
+        "dependencies": [
+          7
+        ],
+        "priority": "high",
+        "details": "SEÇÃO 8: CONVITE SELETIVO - Copy Original:\n\n**Headline:** \"Nem todo visionário está pronto\"\n\n**Copy:** Trabalhamos com 5 projetos por vez. Máximo.\n\nPorque excelência não escala fácil. Se escalasse, não seria excelência.\n\nSe você:\n- Aceita que \"bom\" é suficiente\n- Precisa do \"mais barato\"\n- Tem pressa incompatível com perfeição\n\nExistem ótimas construtoras no mercado.\n\nMas se você:\n- Sabe a diferença que faz diferença\n- Entende que referências não nascem de concessões\n- Quer dormir tranquilo sabendo que sua visão está protegida\n\n**CTA Final:** Se você entende a diferença, clique aqui\n\n**Texto de fechamento:** *Alguns constroem. Nós criamos referências.*\n\n*A diferença? Você sente, seus clientes admiram, seus concorrentes estudam.*\n\nA copy atual não estabelece os critérios de seleção nem a exclusividade.",
+        "testStrategy": "Verificar se a copy estabelece claramente quem NÃO é o cliente ideal e quem É. Manter a linguagem de seleção e exclusividade. Testar se o fechamento reforça o posicionamento.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Mapear componente ConviteSeletivoSection atual e estrutura de CTA",
+            "description": "Analisar seção atual de convite/CTA, identificando elementos genéricos que precisam ser substituídos pela seletividade específica.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Implementar headline de seleção: 'Nem todo visionário está pronto'",
+            "description": "Substituir CTA genérico por headline que estabelece imediatamente a seletividade do processo.",
+            "status": "done",
+            "dependencies": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Estabelecer limitação deliberada: 'Trabalhamos com 5 projetos por vez. Máximo.'",
+            "description": "Implementar limitação específica que demonstra exclusividade e cuidado por projeto.",
+            "status": "done",
+            "dependencies": [
+              2
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Explicar filosofia da limitação: 'Porque excelência não escala fácil'",
+            "description": "Implementar justificativa filosófica que transforma limitação em valor diferenciado.",
+            "status": "done",
+            "dependencies": [
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Definir critérios de exclusão: quem aceita 'bom', precisa do 'mais barato', tem pressa",
+            "description": "Implementar lista específica de características que desqualificam potenciais clientes.",
+            "status": "done",
+            "dependencies": [
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Redirecionar não-adequados: 'Existem ótimas construtoras no mercado'",
+            "description": "Implementar redirecionamento elegante para quem não se encaixa nos critérios.",
+            "status": "done",
+            "dependencies": [
+              5
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Definir critérios de inclusão: sabe a diferença, entende referências, quer proteção da visão",
+            "description": "Implementar lista específica de características que qualificam os clientes ideais.",
+            "status": "done",
+            "dependencies": [
+              6
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Criar CTA final seletivo: 'Se você entende a diferença, clique aqui'",
+            "description": "Implementar CTA que funciona como último filtro de seleção baseado em entendimento.",
+            "status": "done",
+            "dependencies": [
+              7
+            ]
+          },
+          {
+            "id": 9,
+            "title": "Adicionar fechamento de posicionamento: 'Alguns constroem. Nós criamos referências.'",
+            "description": "Implementar frase de fechamento que reforça o posicionamento central da marca.",
+            "status": "done",
+            "dependencies": [
+              8
+            ]
+          },
+          {
+            "id": 10,
+            "title": "Finalizar com tríade de diferenciação: 'Você sente, seus clientes admiram, seus concorrentes estudam'",
+            "description": "Implementar fechamento final que cristaliza os três níveis de impacto do trabalho Kabbatec.",
+            "status": "done",
+            "dependencies": [
+              9
+            ]
+          },
+          {
+            "id": 11,
+            "title": "Desenvolver design premium que reflete a exclusividade da copy",
+            "description": "Criar layout sofisticado que visualmente demonstra a seletividade e exclusividade do convite.",
+            "status": "done",
+            "dependencies": [
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Implementar Visual Premium: Adaptar design para servir à copy original",
+        "description": "Após restaurar toda a copy original, adaptar os elementos visuais para servir e potencializar a copy autêntica, mantendo a elegância premium que a marca exige.",
+        "status": "done",
+        "dependencies": [
+          8
+        ],
+        "priority": "medium",
+        "details": "ADAPTAÇÃO VISUAL PARA COPY ORIGINAL:\n\n**Microinterações e Detalhes:**\n- Animações suaves, premium, nada chamativo — elegância na sutileza\n- Tipografia: Serif moderna para headlines, sans-serif clean para body\n- Cores: Preto profundo, branco puro, um único acento dourado sutil\n- Imagens: Fotografia arquitetônica dos cases, ângulos que revelam obsessão por detalhes\n- Loading: \"Preparando algo que vale a pena esperar...\"\n- 404: \"Até nossos erros têm padrão\"\n- Favicon: Símbolo minimalista que sugere precisão e cuidado\n\n**Princípios:**\n- O visual deve servir à copy, nunca competir com ela\n- Manter a intimidade e sofisticação da voz de marca\n- Elementos visuais devem reforçar o posicionamento premium\n- Preservar a autenticidade dos stories e depoimentos",
+        "testStrategy": "Verificar se o visual potencializa a copy sem competir. Manter a elegância premium. Testar se a experiência visual reforça o posicionamento de excelência.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Definir sistema tipográfico premium: serif moderna para headlines, sans-serif clean para body",
+            "description": "Estabelecer hierarquia tipográfica que honra a sofisticação da copy com contraste elegante entre serif e sans-serif.",
+            "status": "done",
+            "dependencies": [],
+            "details": "<info added on 2025-09-22T14:32:18.650Z>\nDependency satisfied: premium typographic system implemented (Playfair Display for headlines, Inter for body) with an elegant contrast hierarchy. CSS variable --font-serif corrected to ensure consistency across Tailwind. Playwright evaluation confirms correct font application on h1 and p.\n</info added on 2025-09-22T14:32:18.650Z>"
+          },
+          {
+            "id": 2,
+            "title": "Implementar paleta de cores minimalista: preto profundo, branco puro, acento dourado sutil",
+            "description": "Criar sistema de cores que refleta a elegância premium sem competir com a copy autêntica.",
+            "status": "done",
+            "dependencies": [],
+            "details": "<info added on 2025-09-22T14:33:29.193Z>\n- Paleta aplicada via tokens globais: --color-bg: #000000; --color-fg: #FFFFFF; --color-accent: hsl(46 38% 54%); suportes: --color-border: rgba(255,255,255,0.08), --color-muted: rgba(255,255,255,0.72), --color-overlay: rgba(0,0,0,0.72), --focus-ring: hsl(46 38% 54%)\n- Estados do acento: hover hsl(46 38% 60%), active hsl(46 38% 48%); foco com outline de 2px no acento\n- Aplicação: body, header, footer e seções em #000000; textos padrão e headings em #FFFFFF; links, ícones, divisórias, bullets e microinterações usam o acento com parcimônia\n- Botões: remoção de variantes “primary” azuis; novos estilos minimalistas com borda/acento e texto branco; uso de fundo dourado apenas em CTAs principais com texto preto para contraste\n- Deprecações: variáveis/classes “primary-blue” removidas; referências substituídas por tokens de cor atuais\n- Acessibilidade: contraste branco/preto ≥ AA/AAA; acento não usado como cor de texto corrida; quando usado como fundo, texto preto assegura contraste\n- Overlays e modais com --color-overlay para profundidade sutil sem competir com a copy\n- Testes Playwright aprovados: body com bg #000000; h1 com #FFFFFF; elementos de destaque herdando hsl(46 38% 54%); ausência de azul residual em computed styles\n</info added on 2025-09-22T14:33:29.193Z>"
+          },
+          {
+            "id": 3,
+            "title": "Desenvolver sistema de espaçamento que respira elegância e sofisticação",
+            "description": "Criar ritmo visual que permita que cada palavra da copy tenha o impacto máximo através de espaçamento generoso.",
+            "status": "done",
+            "dependencies": [],
+            "details": "<info added on 2025-09-22T14:34:29.530Z>\nTokens atualizados:\n- --spacing-lg: 2.5rem; --spacing-3xl: 6rem\n- --lh-body: 1.8\n\nRitmo vertical (utilitários):\n- .space-y-elegant > * + * { margin-top: clamp(1rem, 1.2vw, 1.5rem); }\n- .space-y-relaxed > * + * { margin-top: var(--spacing-lg); }\n- .space-y-wide > * + * { margin-top: clamp(2.5rem, 4vw, var(--spacing-3xl)); }\n\nTipografia:\n- body { line-height: var(--lh-body); }\n- h1 { line-height: 1.1; } h2 { line-height: 1.2; } h3 { line-height: 1.3; }\n\nContainers e seções:\n- .container-text { max-width: 68ch; margin-inline: auto; padding-inline: clamp(1.25rem, 4vw, 3rem); }\n- section { padding-block: clamp(4rem, 8vw, 10rem); }\n- Regras de isolamento: h1 + p { margin-top: 1rem; } .lede + * { margin-top: var(--spacing-lg); }\n- Limitar largura de parágrafos longos com .measure { max-width: 68ch; }\n\nTransições premium:\n- --ease-premium: cubic-bezier(0.19, 1, 0.22, 1)\n- --transition-fast: 180ms; --transition-base: 280ms; --transition-slow: 420ms\n- Aplicar transition: color, opacity, transform, box-shadow usando var(--ease-premium)\n\nAplicação sugerida:\n- Hero e headlines principais: .space-y-wide\n- Seções de copy longa (Observação Íntima, Matemática do Valor): .container-text .space-y-relaxed\n- Cards de cases e listas: .space-y-elegant\n\nCritérios de validação:\n- Medida de texto entre 60–75 caracteres por linha\n- Espaços verticais nunca colapsam abaixo de 1rem em mobile\n- Transições imperceptíveis ao ler (≤420ms, sem overshoot agressivo)\n</info added on 2025-09-22T14:34:29.530Z>"
+          },
+          {
+            "id": 4,
+            "title": "Implementar animações sutis que complementam sem distrair da copy",
+            "description": "Criar microinterações elegantes que reforçam o posicionamento premium sem roubar atenção da copy.",
+            "status": "done",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "<info added on 2025-09-22T14:36:23.436Z>\n- Padrões de tempo e easing: 400–800ms (default 600ms). Easing premium: cubic-bezier(0.22, 1, 0.36, 1) para entradas e cubic-bezier(0.4, 0, 1, 1) para saídas. Sem overshoot, sem loops.\n- Fade-ins graduais da copy: opacity 0→1 + translateY(8–10px), 500–700ms, escalonamento entre elementos de 60–80ms (máx. 120ms). Uma única revelação por elemento.\n- Scroll-reveal refinado: IntersectionObserver threshold 0.15, rootMargin 0 0 -10% 0. Revela uma vez, usando apenas opacity/transform para 60fps.\n- Hover dourado sutil: links/CTAs/cards transitam color/box-shadow/transform em 400ms. Glow dourado discreto (shadow suave com o acento dourado em baixa opacidade), sem “piscas” agressivos.\n- Lift elegante em cards: translateY(-4px) + scale(1.01) + sombra enriquecida com dourado sutil, 400–500ms. Reversão fluida sem “snap”.\n- Headings suaves: entrada com opacity + translateY(6–8px), 500–700ms. Sem letter-spacing animado; foco em leitura.\n- Transições globais: color, background-color, border-color, box-shadow, opacity e transform com 400–600ms e o easing premium. Complementam a copy, não competem.\n- Suporte a reduced-motion: se prefers-reduced-motion, desativar scroll-reveal (elementos já visíveis), remover transforms e limitar transições a 0–100ms baseadas apenas em cor/contraste.\n- Acessibilidade: estados :focus-visible espelham o hover (contorno/halo dourado sutil) sem depender só de cor; manter contraste AA.\n- Performance: priorizar transform/opacity, evitar filtros pesados, aplicar will-change de forma comedida e remover listeners após revelar.\n</info added on 2025-09-22T14:36:23.436Z>"
+          },
+          {
+            "id": 5,
+            "title": "Curar fotografias arquitetônicas dos cases que revelam obsessão por detalhes",
+            "description": "Selecionar e otimizar imagens que complementam os stories dos cases com ângulos que mostram o cuidado pelos detalhes.",
+            "status": "done",
+            "dependencies": [],
+            "details": "<info added on 2025-09-22T14:35:25.361Z>\n- Curated sets by case and visual focus:\n  - Elite Core: elite-core-1.jpg, elite-core-2.jpg, elite-core-3.jpg — macro/close-ups of finishes, material junctions, lighting details, alignment tolerances, texture transitions.\n  - First Move: first-move-1.jpg, first-move-2.jpg — functional layout, circulation lines, zoning, sightlines, equipment placement logic.\n  - Two Ases: two-ases-1.jpg, two-ases-2.jpg, two-ases-3.jpg, two-ases-4.jpg — premium density without clutter, layered programs, acoustic treatment, ceiling/lighting rhythm.\n\n- Optimization and delivery:\n  - Serve via OptimizedImage with AVIF and WebP sources, JPEG fallback; responsive srcset widths at 480/768/1024/1440/1920; sizes tuned to container; lazy loading + decoding=\"async\".\n  - Use LQIP/blur placeholder; strip EXIF, convert to sRGB, cap max dimension at 2400px, compression: AVIF ~45 CQ, WebP ~75 quality.\n  - Only the first in-viewport thumbnail per section may use fetchpriority=\"high\"; all others low.\n\n- Data integration:\n  - In case-data.ts, add per-case gallery arrays with objects: { src, alt, caption, width, height, dominantColor }.\n  - Alt/caption guidance:\n    - Elite Core: highlight precision in joinery, metal/stone interfaces, lighting cut-lines.\n    - First Move: emphasize flow efficiency, zoning logic, visibility and access.\n    - Two Ases: show high-occupancy with premium spacing, layered materials, acoustic comfort.\n\n- Lightbox and UI:\n  - In case-card.tsx, open lightbox with gallery and index on image click; present caption and alt; enable keyboard navigation, swipe, zoom; 150–200ms fade transition; close on ESC/backdrop; focus trap and aria-labels for controls.\n  - Thumbnails retain lazy load; lightbox preloads next/prev only.\n\n- Acceptance checks:\n  - AVIF/WebP served where supported; JPEG fallback verified on Safari.\n  - No layout shift (explicit width/height); colors match originals; no compression artifacts.\n  - Storytelling aligns with copy: details (Elite Core), functional layout (First Move), premium density (Two Ases).\n</info added on 2025-09-22T14:35:25.361Z>"
+          },
+          {
+            "id": 6,
+            "title": "Criar componentes de interface que refletem o padrão Kabbatec",
+            "description": "Desenvolver botões, cards e elementos UI que demonstram visualmente o mesmo padrão de excelência descrito na copy.",
+            "status": "done",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "<info added on 2025-09-22T14:37:12.259Z>\n- Criados componentes UI premium:\n  • Botão variante “Premium”: fundo preto profundo, tipografia branca pura, borda dourada sutil (1px, opacidade leve), raio suave; hover com glow dourado discreto (blur suave, intensidade controlada), active com leve compressão, focus com outline dourado visível e offset; estado disabled sem glow e com contraste preservado.\n  • Card com glassmorphism: superfície translúcida com blur, borda branca/10 (1px), sombras elegantes em duas camadas para profundidade, raio generoso; hover com lift sutil (elevação e leve translate), aumento mínimo de brilho da borda e redução do blur para reforçar legibilidade.\n\n- Integração ao design system:\n  • Tokens de cor: preto profundo, branco puro, dourado de acento (uso comedidamente).\n  • Tokens de espaçamento: escala generosa 8/12/16/24/32.\n  • Tokens de raio: 8/12/16/20 (cards “premium” ≥16).\n  • Tokens de sombra/elevations: níveis discretos com opacidades baixas.\n  • Tokens de blur para glassmorphism e intensidade de glow.\n  • Tokens de motion: durações 140–200ms, easing suave (ease-out/cubic-bezier).\n\n- Microinterações e animações:\n  • Transições apenas em transform/opacity para fluidez.\n  • Hover/press/focus documentados para botão e card, mantendo elegância sem excessos.\n  • Respeito a prefers-reduced-motion.\n\n- Acessibilidade e performance:\n  • Contraste AA para textos e ícones, focus state evidente.\n  • Fallback para ambientes sem suporte a blur (fundo sólido sutil).\n  • Otimização do glow para não competir com a copy e não degradar FPS.\n\n- Alinhamento com a copy Kabbatec:\n  • Visual que sussurra sofisticação, com espaçamentos amplos e animações discretas, reforçando o padrão de excelência descrito na copy e servindo o conteúdo sem distração.\n</info added on 2025-09-22T14:37:12.259Z>"
+          },
+          {
+            "id": 7,
+            "title": "Implementar estados de hover e interação que sussurram sofisticação",
+            "description": "Criar feedback visual sutil para interações que mantém a elegância e não quebra a imersão na copy.",
+            "status": "done",
+            "dependencies": [
+              4,
+              6
+            ],
+            "details": "<info added on 2025-09-22T14:38:12.255Z>\n- Hover (links, botões e cards): opacidade 0.95; escala 1.005; glow dourado sutil (sombra suave com o acento dourado da marca); links com underline em gradient dourado; transições de opacity/transform/sombra/underline em 300ms ease-out.\n- Focus: outline dourado de 2px com offset de 2px (usar :focus-visible), sem remover o foco nativo.\n- Active/pressed: compressão leve com escala 0.995 e redução do glow; transição 300ms ease-out.\n- Suporte a movimento reduzido: se prefers-reduced-motion: reduce, desativar animações de transform/opacidade/sombra e aplicar estados estáticos (sem scale), mantendo outline e underline.\n</info added on 2025-09-22T14:38:12.255Z>"
+          },
+          {
+            "id": 8,
+            "title": "Otimizar hierarquia visual para guiar o olhar através da narrativa da copy",
+            "description": "Estruturar layout que naturalmente conduz o leitor através da jornada emocional da copy original.",
+            "status": "done",
+            "dependencies": [
+              1,
+              2,
+              3,
+              5
+            ],
+            "details": "<info added on 2025-09-22T14:40:02.664Z>\n- .narrative-flow: aplicar grid em Z-pattern para condução do olhar. Usar grid de 12 colunas (conteúdo principal 7–8 col, apoio 4–5 col), alternando a posição texto/imagem por linha para formar diagonais visuais (A→B, C→D...). Em ≤1024px reduzir para 8 col; em ≤768px empilhar em 1 col mantendo a ordem narrativa (texto antes de imagem). Limitar largura de leitura a 68–74ch.\n- Citações: blockquote com indentação e “leading line” dourada sutil à esquerda (1–2px, opacidade baixa), recuo interno de 16–24px, itálico em serif moderna. Inserir travessão/autor em linha separada. Garantir contraste AA e alinhamento ao baseline.\n- .emotional-journey: container flex left-to-right com steps sequenciais e conectores discretos. Cada step com título curto, microdescrição e marcador circular mínimo (dourado sutil). Em mobile, usar scroll-snap horizontal ou empilhar verticalmente; anunciar como lista ordenada (semântica/ARIA) para leitores de tela.\n- Headings: títulos proeminentes com border-bottom fino (1px) em dourado sutil, espaçamento acima/abaixo generoso (32–48px), letter-spacing leve e hierarchy clara (H2 > H3). Considerar offset para ancoragem com header fixo.\n- Ritmo e espaçamento: usar escala 8pt (8/16/24/32/48/64). Entre parágrafos: 16–24px; entre seções: 64–96px. Linhas a 150%–170% de line-height para leitura premium.\n- Sidebar sticky de imagens: coluna lateral direita (30%–35%) com position: sticky (top ~96px), sincronizada com os blocos de texto. Imagens com proporção consistente, bordas mínimas e sombra muito leve. Legendas curtas opcionais. Em ≤1024px, desativar sticky e inserir imagens após os parágrafos correspondentes.\n- Microinterações discretas: revelar on-scroll suave (fade/translate 8–12px) respeitando redução de movimento; hover apenas em elementos interativos, alinhado ao padrão premium.\n- Performance e acessibilidade: lazy-loading de imagens, tamanhos responsivos, evitar CLS. Contraste de dourado validado sobre fundo claro/escuro. Navegação por teclado nos steps da jornada emocional.\n- Critérios de aceitação: Z-pattern evidente nas quebras de seção; quotes com linha dourada sutil e boa legibilidade; .emotional-journey fluindo da esquerda para a direita com conectores limpos; headings com border-bottom consistente; espaçamento guiando a leitura sem ruído; sidebar de imagens fixa sem sobrepor conteúdo e responsiva em mobile.\n</info added on 2025-09-22T14:40:02.664Z>"
+          },
+          {
+            "id": 9,
+            "title": "Implementar detalhes de marca premium: loading, 404, favicon que refletem o padrão",
+            "description": "Criar elementos de marca que mantêm a consistência do posicionamento mesmo nos detalhes mínimos.",
+            "status": "done",
+            "dependencies": [
+              2,
+              6
+            ],
+            "details": "<info added on 2025-09-22T14:39:08.183Z>\n- Loading implementado com overlay discreto e spinner dourado; mensagem exibida: \"Preparando algo que vale a pena esperar...\".\n- Página 404 personalizada com \"Até nossos erros têm padrão\" e design elegante preto/dourado.\n- Favicon otimizado com ícones múltiplos (16x16 a 192x192) e apple-touch, devidamente referenciados.\n- Consistência mantida na paleta e tipografia em todos os pontos de contato.\n</info added on 2025-09-22T14:39:08.183Z>"
+          },
+          {
+            "id": 10,
+            "title": "Realizar ajustes finais para garantir que visual serve à copy sem competir",
+            "description": "Revisar todos os elementos visuais para garantir que potencializam a copy original sem diminuir seu impacto.",
+            "status": "done",
+            "dependencies": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "details": "<info added on 2025-09-22T14:40:33.291Z>\nFinal adjustments completed: comprehensive review confirms visual elements (typography, colors, spacing, animations, imagery, components) elevate the original copy without competing. Playwright snapshot validation confirms narrative flow, elegant contrast, and premium subtlety. Parent Task 9 successfully completed.\n</info added on 2025-09-22T14:40:33.291Z>"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Validação Final: Copy, Posicionamento e Voz de Marca",
+        "description": "Realizar validação completa de toda a landing page para garantir conformidade total com a copy original, posicionamento premium e voz de marca definidos nos documentos de referência.",
+        "status": "done",
+        "dependencies": [
+          9
+        ],
+        "priority": "high",
+        "details": "VALIDAÇÃO FINAL COMPLETA:\n\n**Checklist de Copy:**\n- [ ] Todas as seções seguem exatamente a copy definida em kabbatec_landing.md\n- [ ] Headlines e subheadlines são exatamente as originais\n- [ ] Stories dos cases mantêm especificidade e intimidade\n- [ ] Depoimentos são autênticos e específicos\n- [ ] CTAs seguem a linguagem premium definida\n\n**Checklist de Posicionamento:**\n- [ ] \"Para visionários que não aceitam 'mais ou menos'\" está presente\n- [ ] Padrão Kabbani é mencionado corretamente\n- [ ] Fernando e Silvio são apresentados como protagonistas\n- [ ] Seletividade e exclusividade estão estabelecidas\n\n**Checklist de Voz de Marca:**\n- [ ] Tom íntimo e conhecedor mantido\n- [ ] Linguagem premium sem arrogância\n- [ ] Observações específicas e detalhadas\n- [ ] Conexão emocional com visionários estabelecida\n\n**Verificação contra GUIA_DE_POSICIONAMENTO_E_VOZ_DE_MARCA.md:**\n- [ ] Arquétipos: Curador de Excelência e Parceiro Seletivo\n- [ ] Valores: Padrão Inegociável, Cuidado Absoluto, Visão Preservada\n- [ ] Mensagens-chave presentes e corretas",
+        "testStrategy": "Revisar linha por linha contra os documentos de referência. Testar se a experiência completa transmite o posicionamento premium. Validar se a voz de marca está consistente em todas as seções.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Validar conformidade Hero Section com copy original completa",
+            "description": "Verificar se Hero implementa exatamente: headline principal, subheadline com cases, texto de apoio e CTAs conforme kabbatec_landing.md.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Validar seção Observação Íntima: tom íntimo, Fernando e Silvio, depoimento Two Ases",
+            "description": "Confirmar que seção mantém observação pessoal, apresenta protagonistas corretamente e inclui citação autêntica específica.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 3,
+            "title": "Validar seção Inimigo Comum: frustrações específicas, perguntas diretas, urgência",
+            "description": "Verificar se captura frustrações reais dos visionários, faz perguntas específicas e cria urgência apropriada.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 4,
+            "title": "Validar Cases: Elite Core, First Move, Two Ases com citações, contextos e resultados específicos",
+            "description": "Confirmar que cada case tem citação exata, story íntimo e resultado específico conforme copy original.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 5,
+            "title": "Validar Padrão Kabbatec: processo 4 pontos, Fernando e Silvio, continuidade Kabbani",
+            "description": "Verificar se processo está completo, protagonistas mencionados e ligação com Raquel Kabbani estabelecida.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 6,
+            "title": "Validar Prova Social: headline íntima, 4 depoimentos específicos com atribuições corretas",
+            "description": "Confirmar que depoimentos são exatos, atribuições específicas e headline sugere autenticidade.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 7,
+            "title": "Validar Matemática do Valor: custos específicos, reposicionamento investimento, comparação R$ 2mi vs R$ 1mi",
+            "description": "Verificar se lista custos corretos, reposiciona como investimento e inclui comparação financeira específica.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 8,
+            "title": "Validar Convite Seletivo: limitação 5 projetos, critérios exclusão/inclusão, CTA seletivo",
+            "description": "Confirmar que estabelece limitação específica, define quem não serve e quem serve, CTA final seletivo.",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 9,
+            "title": "Verificar posicionamento central: 'Para visionários que não aceitam mais ou menos' presente e consistente",
+            "description": "Validar se posicionamento central está presente no Hero e é consistente em toda experiência.",
+            "status": "done",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": 10,
+            "title": "Verificar voz de marca: tom íntimo, observações específicas, linguagem premium sem arrogância",
+            "description": "Validar se voz mantém intimidade, especificidade e sofisticação sem soar arrogante ou corporativa.",
+            "status": "done",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": 11,
+            "title": "Validar arquétipos: Curador de Excelência e Parceiro Seletivo evidentes na experiência",
+            "description": "Confirmar se os arquétipos de marca estão claramente transmitidos através da copy e experiência visual.",
+            "status": "done",
+            "dependencies": [
+              9,
+              10
+            ]
+          },
+          {
+            "id": 12,
+            "title": "Validar valores fundamentais: Padrão Inegociável, Cuidado Absoluto, Visão Preservada",
+            "description": "Verificar se os três valores centrais da marca estão evidentes e bem comunicados na experiência completa.",
+            "status": "done",
+            "dependencies": [
+              9,
+              10
+            ]
+          },
+          {
+            "id": 13,
+            "title": "Teste de experiência completa: jornada emocional do visionário respeitada",
+            "description": "Realizar walkthrough completo para validar se a jornada emocional conduz o visionário adequadamente do problema à solução.",
+            "status": "done",
+            "dependencies": [
+              11,
+              12
+            ]
+          },
+          {
+            "id": 14,
+            "title": "Documentar conformidade final e aprovar lançamento da copy autêntica",
+            "description": "Compilar validação completa, documentar conformidade total e aprovar implementação final da copy original Kabbatec.",
+            "status": "done",
+            "dependencies": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Task 11: Implementar Melhorias Finais de Visual, Performance e Usabilidade",
+        "description": "Plano de ação para elevar a landing page ao estado de excelência total, refinando aspectos visuais (spacing, cores, animações), performance (CSS/JS bundle, imagens) e usabilidade (responsividade, contraste, touch interactions), excluindo hero section. Integrar com design system existente para consistência premium.",
+        "details": "",
+        "testStrategy": "",
+        "status": "in-progress",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Align design system tokens (spacing, colors, motion, typography) in Tailwind and globals",
+            "description": "Standardize the foundational visual tokens (spacing scale, color palette, motion curves/durations, typography) to match the existing design system, ensuring consistency across the landing page. Exclude any change to the hero section.",
+            "dependencies": [],
+            "details": "Implementation steps:\n1) Tailwind tokens:\n   - Update tailwind.config.js > theme.extend:\n     • spacing: adopt DS scale (e.g., 2, 4, 8, 12, 16, 24, 32, 40, 48, 64). Map to Tailwind via theme.extend.spacing.\n     • colors: set brand.base (near-black), brand.onBase (white), accent.primary, accent.onPrimary; ensure accent is tuned to support WCAG AA on brand.base.\n     • typography: set fontFamily for headings and body to DS fonts; set font weights.\n     • transition: define DS durations (120ms, 180ms, 240ms), easing (e.g., cubic-bezier(.2,.8,.2,1)).\n     • container: center with padding consistent with spacing scale; set screens per DS (e.g., sm 640, md 768, lg 1024, xl 1280, 2xl 1536).\n2) Global CSS variables:\n   - In src/styles/globals.css (:root), expose CSS vars for space, colors, and motion: --space-2, --space-4, --color-accent, --motion-fast, etc. Bind to Tailwind tokens to keep parity.\n   - Add prefers-reduced-motion base styles (no animation, no transition).\n3) Design system bridge:\n   - If present, update design-system/tokens.ts to mirror Tailwind tokens and export for TS consumers.\n4) Do not touch hero components.\n\nFiles affected:\n- tailwind.config.js\n- src/styles/globals.css\n- src/design-system/tokens.ts (if exists)\n- src/components/theme-provider.tsx (if tokens/context are used)\n\nAcceptance criteria:\n- Tokens available in Tailwind classes and CSS vars with names aligned to DS.\n- Accent color candidate passes AA contrast on intended backgrounds (validated via tooling).\n- No visual regressions outside hero on hot reload/build.\n\n<info added on 2025-09-22T14:51:57.513Z>\n11.1 complete and validated (bg #000000, fg #ffffff, Inter/Playfair, gold accent AA=4.6:1). Proceed to enforce vertical rhythm across sobre/cases/contato using the new tokens.\n\nImplementation (11.2):\n- Section wrapper:\n  - Create a reusable .section utility (globals.css) with padding-block: var(--space-3xl); and a mobile fallback:\n    • @media (max-width: 767px): padding-block: var(--space-2xl)\n  - Apply .section (or py-[var(--space-3xl)] sm:py-[var(--space-2xl)]) to all non-hero sections on /sobre, /cases, /contato.\n- Flow/stack spacing:\n  - Add a .flow utility in globals.css: .flow > * + * { margin-top: var(--space-xl) }\n    • @media (min-width: 768px): margin-top: var(--space-2xl)\n    • @media (min-width: 1024px): margin-top: var(--space-2xl)\n  - Use .flow for rich-text blocks (headings, paragraphs, lists) to replace ad-hoc mt/mb.\n- Grids and lists:\n  - Standardize gaps with DS tokens only:\n    • Cards/grids (cases): gap-x: var(--space-xl), gap-y: var(--space-2xl) (lg: gap-x: var(--space-2xl), gap-y: var(--space-3xl))\n    • Feature lists/timelines (sobre): space-y: var(--space-lg) (md: var(--space-xl))\n- Forms (contato):\n  - Field stack: space-y: var(--space-xl) (md: var(--space-2xl))\n  - Label–input spacing: mb: var(--space-sm)\n  - Submit group top margin: mt: var(--space-2xl)\n- Headings proximity:\n  - Heading to next block: mb: var(--space-xl) (lg: var(--space-2xl))\n  - Paragraph to paragraph: space-y: var(--space-lg) (md: var(--space-xl))\n- Cleanup:\n  - Remove arbitrary spacing values and negative margins; replace with DS tokens or .flow/.section.\n  - Do not modify hero sections.\n\nFiles to touch:\n- src/styles/globals.css (add .section and .flow utilities)\n- sobre, cases, contato page/components: replace ad-hoc spacing with DS tokens/utilities\n\nAcceptance criteria (11.2):\n- All non-hero sections on /sobre, /cases, /contato use section padding: 6rem (var(--space-3xl)) at ≥md and 4rem (var(--space-2xl)) on mobile.\n- Intra-section vertical spacing uses only DS tokens via .flow/space/gap utilities; no arbitrary px/rem values remain.\n- Cases grid gaps match the specified DS gaps at each breakpoint.\n- Contato form spacing matches the specified stack and label/input rhythm.\n- Playwright assertions:\n  • Computed section padding-top/bottom equals 96px at lg, 64px at <md\n  • No spacing regressions outside hero (snapshot diff ≤ 0.1%)\n- Typography and colors remain as validated in 11.1.\n</info added on 2025-09-22T14:51:57.513Z>",
+            "status": "done",
+            "testStrategy": "Visual sanity check across sections; run Stylelint (if configured) and Tailwind build. Use Stark/axe color contrast checker on new color tokens."
+          },
+          {
+            "id": 2,
+            "title": "Standardize spacing and vertical rhythm across sobre/cases/contato",
+            "description": "Replace ad-hoc paddings/margins with DS spacing tokens to create a consistent vertical rhythm in all non-hero sections. Normalize container paddings and section spacing.",
+            "dependencies": [
+              "11.1"
+            ],
+            "details": "Implementation steps:\n1) Section wrappers:\n   - Ensure each section uses a standardized wrapper: <section class=\"container mx-auto px-... py-...\"> with DS spacing (e.g., py-16 md:py-24). Avoid custom per-section hacks.\n2) Replace ad-hoc spacing:\n   - sobre (about-section.tsx): normalize gaps between heading, paragraph blocks, images to DS gaps (gap-6/gap-8). Remove inline styles.\n   - cases (cases-section.tsx): ensure grid gap-x/y use DS (gap-6/gap-8/gap-12). Align card paddings.\n   - contato (contact-section.tsx): align form field spacing, section padding, and CTA margins to DS.\n3) Components consistency:\n   - Cards, lists, feature rows: replace magic numbers with Tailwind DS spacing classes.\n4) Exclude hero files from changes.\n\nFiles affected:\n- src/sections/about-section.tsx (ou sobre-section.tsx)\n- src/sections/cases-section.tsx\n- src/sections/contact-section.tsx\n- src/components/card.tsx (if used in cases)\n- src/components/section-wrapper.tsx (if exists)\n\nAcceptance criteria:\n- Section paddings and intra-section gaps follow the DS scale exclusively (no arbitrary px values).\n- No horizontal scroll or clipping at 320px and 375px viewports.\n- Visual rhythm consistent between sections (top/bottom paddings equalized).\n\n<info added on 2025-09-22T14:54:36.331Z>\n- Implemented .section across about/cases/contact/contato with padding-block 5rem on mobile (var(--space-2xl)) and 6rem on desktop (var(--space-3xl)).\n- Introduced .flow for content stacks: margin-top 3.5rem by default, 5rem from md+.\n- Standardized DS gaps: grids use gap-xl (3.5rem); tight clusters use gap-sm (1rem).\n- Removed ad-hoc spacing classes: py-16/20/24, space-y-8/6/4, gap-16/6/4/3.\n- Updated cards to p-xl and md:p-2xl.\n- Playwright validations: no horizontal overflow at 375px (overflowX: visible), confirmed 5rem mobile/6rem desktop section padding, CLS 0, consistent gaps (e.g., cases grid gap-xl).\n- No regressions in hero; bundle size unchanged.\n</info added on 2025-09-22T14:54:36.331Z>",
+            "status": "done",
+            "testStrategy": "Manual review on Chrome responsive mode (320, 375, 768, 1024, 1440). Use a CSS diff to confirm removal of arbitrary spacing. Screenshot before/after for each section."
+          },
+          {
+            "id": 3,
+            "title": "Resolve overlaps/overflow and z-index issues in sobre/cases/contato",
+            "description": "Fix any unintended overlaps between elements and eliminate horizontal overflows by correcting positioning, z-index, and container constraints in the listed sections.",
+            "dependencies": [
+              "11.2"
+            ],
+            "details": "Implementation steps:\n1) Audit each section for issues:\n   - Identify elements using negative margins, absolute positioning, or oversized images causing overflow or overlaps.\n2) Fix strategy:\n   - Replace negative margins with DS spacing + layout primitives (grid/flex gaps).\n   - Set max-w and aspect-ratio on images/cards; constrain with overflow-hidden where appropriate.\n   - Normalize z-index: create z tokens (z-10, z-20, z-30) and apply consistently. Remove arbitrary z-index values.\n   - Ensure sticky headers/footers (if any) do not overlay content; add spacer if needed.\n3) Validate on small viewports (320/375) and mid-breakpoints (768/1024).\n4) Do not modify hero section.\n\nFiles affected:\n- src/sections/about-section.tsx\n- src/sections/cases-section.tsx\n- src/sections/contact-section.tsx\n- src/styles/globals.css (add utility classes if necessary)\n\nAcceptance criteria:\n- No element overlaps unless explicitly designed (cards hover elevation excluded on mobile).\n- No horizontal scrolling at 320px, 375px, 768px viewports.\n- Images and grids maintain layout integrity without content clipping.\n\n<info added on 2025-09-22T14:57:45.692Z>\nChanges applied:\n- Added z-index utilities (.z-10, .z-20, .z-30) and overflow control classes (.timeline-container, .bento-wrapper, .form-container) in src/styles/globals.css.\n- Applied overflow-hidden to timeline/about, bento/cases, form/contact, and wrapper/contato containers.\n- Standardized stacking: z-10 on dots/buttons/CTA, z-20 on bento group, z-30 on modal; removed arbitrary z-index values.\n- Fixed about clipping by replacing pl-20 with px-20 on the container.\n- Set max-w-full on grids/images/containers; removed all negative margins.\n\nValidation:\n- At 375px, overflow behavior matches intent (no clipping), with no horizontal overflow observed.\n- Z-index order consistent (dots at 10, modal at 30 above content); visual snapshots clean with no overlaps on mobile or desktop.\n- Hero section untouched; bundle/build remains stable.\n</info added on 2025-09-22T14:57:45.692Z>",
+            "status": "done",
+            "testStrategy": "Use Chrome devtools overlay for scrollable overflow; run automated layout checks with playwright-visual for target viewports; manual z-order check on interactive elements."
+          },
+          {
+            "id": 4,
+            "title": "Typography refinements and hyphenation for long paragraphs",
+            "description": "Improve readability by implementing hyphenation, balanced headings, optimal measure, and robust word wrapping for long paragraphs, respecting Portuguese content.",
+            "dependencies": [
+              "11.1"
+            ],
+            "details": "Implementation steps:\n1) Global typography utilities:\n   - In globals.css, add: html[lang='pt-BR'] .prose p { hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; } and word-break/overflow-wrap for safety: overflow-wrap: anywhere (only where needed) and word-break: normal.\n   - Limit paragraph measure: set max-w-prose (e.g., max-w-[68ch]) for body text containers.\n   - Balance headings: h1-h3 use text-wrap: balance (with fallback).\n2) Ensure lang attribute is set on root HTML (pt-BR) in _document.tsx.\n3) Apply .prose or equivalent typography class to content blocks in about and cases sections.\n4) Exclude hero changes.\n\nFiles affected:\n- src/styles/globals.css\n- src/pages/_document.tsx\n- src/components/rich-text.tsx (or wherever paragraphs are rendered)\n- src/sections/about-section.tsx\n- src/sections/cases-section.tsx\n\nAcceptance criteria:\n- Long paragraphs hyphenate correctly in pt-BR on Safari, Chrome, Firefox.\n- No text-induced horizontal overflow at 320px and 375px.\n- Headings display balanced wrapping without awkward single-word lines (where supported).\n",
+            "status": "done",
+            "testStrategy": "Insert a representative long paragraph in about-section and validate hyphenation. Use BrowserStack to check iOS Safari and Android Chrome. Verify lang=pt-BR is present."
+          },
+          {
+            "id": 5,
+            "title": "Increase contrast of accent elements and update components to meet WCAG AA",
+            "description": "Tune the accent color and update buttons/links/badges to ensure adequate contrast against backgrounds, maintaining the premium visual style.",
+            "dependencies": [
+              "11.1",
+              "11.2"
+            ],
+            "details": "Implementation steps:\n1) Accent tuning:\n   - Adjust accent.primary in tailwind.config.js to achieve ≥ 4.5:1 contrast on brand.base for normal text and ≥ 3:1 for large/graphic elements.\n2) Component updates:\n   - Update src/components/button.tsx variants (filled/outline/ghost) to use accent tokens with accessible onPrimary text color.\n   - Update link treatments (hover/visited states) with underline-offset and decoration-skip-ink for clarity; ensure focus-visible styles are high-contrast.\n   - Update badges/labels to pass contrast.\n3) Content surfaces:\n   - Apply updated color tokens to CTAs in contact-section and case cards.\n4) Exclude hero CTAs.\n\nFiles affected:\n- tailwind.config.js\n- src/components/button.tsx\n- src/components/link.tsx\n- src/components/badge.tsx (if present)\n- src/sections/contact-section.tsx\n- src/sections/cases-section.tsx\n\nAcceptance criteria:\n- All interactive elements (buttons, links, badges) meet WCAG AA contrast.\n- Focus-visible outlines are clearly perceptible on all backgrounds.\n- No color regressions observed in non-hero sections.\n",
+            "status": "done",
+            "testStrategy": "Run axe DevTools and Lighthouse Accessibility audits. Validate contrast ratios using tooling (e.g., Stark) on key components."
+          },
+          {
+            "id": 6,
+            "title": "Refine animations and microinteractions with DS motion and reduced motion support",
+            "description": "Align transitions and subtle animations to DS motion guidelines, avoid excessive movement, and implement prefers-reduced-motion handling. Exclude hero section.",
+            "dependencies": [
+              "11.1",
+              "11.2",
+              "11.3"
+            ],
+            "details": "Implementation steps:\n1) Global motion policy:\n   - In globals.css, define .motion-safe classes that apply transitions (duration-150/200, ease-custom). Add @media (prefers-reduced-motion: reduce) to disable non-essential animations.\n2) Components:\n   - Buttons/links/cards: ensure hover/active/focus transitions are subtle (opacity/transform <= 2px translate/scale 1.02 max). Remove heavy entrance animations.\n   - Cases cards: if using framer-motion, reduce spring stiffness and duration; disable on mobile (use reduced motion or viewport width condition).\n3) Avoid layout shift:\n   - Ensure no transition on properties that affect layout (height/width) unless size is reserved.\n4) Exclude any hero animation adjustments.\n\nFiles affected:\n- src/styles/globals.css\n- src/lib/motion.ts (if used)\n- src/components/button.tsx\n- src/components/card.tsx\n- src/sections/cases-section.tsx\n- src/sections/about-section.tsx\n\nAcceptance criteria:\n- No CLS introduced by animations (CLS <= 0.01 from animations on test pages).\n- All motion respects prefers-reduced-motion (animations disabled/reduced when enabled).\n- Transitions feel subtle and premium (<= 200ms typical, custom ease curve).\n",
+            "status": "done",
+            "testStrategy": "Use Lighthouse/Chrome Performance to check CLS and FPS during interactions. Toggle prefers-reduced-motion in devtools to verify behavior."
+          },
+          {
+            "id": 7,
+            "title": "Implement touch-friendly active states and refine hover behavior on mobile",
+            "description": "Ensure all interactive elements provide immediate tactile feedback on touch devices, remove hover-only affordances on mobile, and meet minimum target sizes.",
+            "dependencies": [
+              "11.6"
+            ],
+            "details": "Implementation steps:\n1) Touch feedback:\n   - Buttons/links/cards: add active:scale-95 or active:bg-opacity changes; ensure transition durations are short (≤100ms) on active.\n   - Add data-pointer-coarse detection (CSS @media (pointer: coarse)) to disable hover-only styles and show clear pressed states.\n2) Hit target sizing:\n   - Ensure interactive targets are ≥ 48x48px (padding via DS spacing). Adjust nav links, icon buttons, and case card CTAs.\n3) Remove hover traps:\n   - Avoid :hover-triggered reveals on mobile; use click/tap toggles instead.\n4) Keep hero untouched.\n\nFiles affected:\n- src/components/button.tsx\n- src/components/link.tsx\n- src/components/nav.tsx\n- src/components/card.tsx\n- src/sections/contact-section.tsx\n- src/styles/globals.css\n\nAcceptance criteria:\n- All interactive elements provide visible active feedback within 100ms on touch.\n- No sticky hover states on mobile.\n- Minimum hit area 48x48px for tap targets.\n",
+            "status": "done",
+            "testStrategy": "Test on real devices/emulators (iOS Safari, Android Chrome). Use devtools Sensors to emulate pointer: coarse. Validate hit sizes using accessibility overlays."
+          },
+          {
+            "id": 8,
+            "title": "Add ARIA labels and semantic roles to interactive and navigational elements",
+            "description": "Enhance accessibility by adding ARIA labels for icon-only controls, proper roles, and landmarks. Ensure keyboard operability and semantic HTML usage.",
+            "dependencies": [
+              "11.2"
+            ],
+            "details": "Implementation steps:\n1) Navigation and landmarks:\n   - Add <header>, <nav aria-label=\"Principal\">, <main id=\"conteudo\">, <footer>. Provide a skip-to-content link.\n2) Icon buttons/links:\n   - Add aria-label with clear action verbs (e.g., \"Abrir menu\", \"Ver case Elite Core\"). Replace clickable <div> with semantic <button> or <a>.\n3) State attributes:\n   - Use aria-current=\"page\" on active nav link; aria-expanded on toggles; role=\"status\" and aria-live for form submission feedback if applicable.\n4) Forms (contato):\n   - Ensure inputs have associated <label for=>; describe optional vs required; set aria-invalid on errors.\n5) Keep hero untouched.\n\nFiles affected:\n- src/components/nav.tsx\n- src/components/button.tsx\n- src/components/icon-button.tsx (if present)\n- src/sections/cases-section.tsx\n- src/sections/contact-section.tsx\n- src/pages/_app.tsx or layout component (for skip link)\n\nAcceptance criteria:\n- Axe DevTools reports 0 critical accessibility violations on non-hero pages.\n- All interactive elements are keyboard reachable with visible focus order matching visual order.\n- Screen reader announces labels and states accurately.\n",
+            "status": "done",
+            "testStrategy": "Run axe and Lighthouse Accessibility. Test with keyboard-only navigation. Use NVDA/VoiceOver quick pass on nav, cases cards, and contact form."
+          },
+          {
+            "id": 9,
+            "title": "Optimize CSS/JS bundles: remove unused Tailwind classes, enable minification and code-splitting",
+            "description": "Reduce bundle size by configuring Tailwind content scanning, pruning unused utilities, enabling minification, and applying dynamic imports/tree-shaking for heavy components.",
+            "dependencies": [
+              "11.2",
+              "11.3",
+              "11.4",
+              "11.5",
+              "11.6",
+              "11.7",
+              "11.8"
+            ],
+            "details": "Implementation steps:\n1) Tailwind purge/content:\n   - In tailwind.config.js, set content to include all TSX/MDX files (src/**/*.{js,ts,jsx,tsx,mdx}). Avoid dynamic class name concatenation; refactor to static class lists where possible.\n2) Remove unused CSS:\n   - Audit globals.css and component-level CSS; delete dead selectors. Prefer Tailwind utilities.\n3) JS minification and analysis:\n   - next.config.js: ensure swcMinify: true. Add @next/bundle-analyzer and run ANALYZE=true to identify heavy libs.\n   - Dynamic import heavy non-critical components (e.g., carousels, maps) with next/dynamic and suspense; split cases carousel if present.\n   - Tree-shake icons: use per-icon imports instead of whole icon packs.\n4) Vendor pruning:\n   - Remove unused dependencies from package.json; ensure lockfile updated.\n\nFiles affected:\n- tailwind.config.js\n- postcss.config.js\n- next.config.js\n- package.json / yarn.lock or package-lock.json\n- src/components/* (dynamic imports refactors)\n- src/styles/globals.css\n\nAcceptance criteria:\n- CSS bundle reduced vs baseline (target ≥ 30% reduction or < 50KB gzipped if feasible).\n- Main JS bundle size reduced vs baseline (target ≥ 20% reduction) without breaking functionality.\n- No missing styles due to over-pruning (visual parity maintained).\n",
+            "status": "done",
+            "testStrategy": "Capture baseline bundle sizes (next build). After changes, compare .next/static/chunks and CSS sizes. Verify pages render correctly. Use Lighthouse to observe Performance improvement."
+          },
+          {
+            "id": 10,
+            "title": "Enable lazy loading and optimization for all non-hero images; finalize with Lighthouse 100",
+            "description": "Ensure every image outside the hero uses lazy loading and responsive formats, optimize assets, and iterate on Lighthouse issues until the page reaches a 100 score across categories.",
+            "dependencies": [
+              "11.9"
+            ],
+            "details": "Implementation steps:\n1) Image optimization:\n   - Replace <img> with framework Image component where available (e.g., next/image). Set loading=\"lazy\" for non-critical images, decoding=\"async\".\n   - Provide width/height and sizes attributes; define responsive srcSet via Image props. Enable modern formats (WebP/AVIF) via next.config.js images.formats.\n   - Compress assets in /public/images (lossless or high-quality lossy); generate placeholders (blurDataURL) for LQIP if used.\n   - Audit about/cases/contact images to ensure correct aspect-ratio and no layout shifts.\n2) Scripts and assets:\n   - Defer non-critical scripts; ensure preconnect/preload only for critical assets. Confirm CSS/JS minification is active (from Subtask 11.9).\n3) Lighthouse pass:\n   - Run Lighthouse (mobile and desktop). Address flagged items (e.g., unused CSS/JS, tap targets, color contrast already handled, ARIA issues) until scoring 100 in Performance, Accessibility, Best Practices, and SEO.\n4) Do not alter hero media.\n\nFiles affected:\n- next.config.js\n- src/sections/about-section.tsx\n- src/sections/cases-section.tsx\n- src/sections/contact-section.tsx\n- public/images/**/*\n- src/pages/_document.tsx (for preconnect/preload tweaks if needed)\n\nAcceptance criteria:\n- All non-hero images are lazy-loaded with correct intrinsic sizes; no CLS from images.\n- Lighthouse (mobile and desktop) shows 100 for Performance, Accessibility, Best Practices, and SEO on the landing page.\n- No regressions to spacing, animations, or accessibility.\n",
+            "status": "done",
+            "testStrategy": "Use Lighthouse CI or run locally with throttling; verify image CPU/Network impact in Performance panel. Manually check lazy loading via network tab (images load on scroll)."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "created": "2025-01-27",
+      "description": "Reestruturação completa focada na restauração e fidelidade à copy original da Kabbatec",
+      "currentTag": "redesign-kabbatec",
+      "updated": "2025-09-22T19:19:55.295Z"
+    }
+  }
+}

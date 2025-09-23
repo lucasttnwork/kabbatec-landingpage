@@ -12,19 +12,6 @@ import { useImagePerformanceTracker } from "@/lib/hooks/useImagePerformance";
 export function ImageOptimizationExamples() {
   const { trackImage, getPerformanceReport } = useImagePerformanceTracker();
 
-  const handleImageLoad = (src: string) => {
-    // Simular tracking de performance
-    trackImage({
-      loadTime: Math.random() * 500 + 100, // Simulado
-      size: Math.random() * 100000 + 50000, // Simulado
-      format: 'webp',
-      cached: Math.random() > 0.5,
-      dimensions: { width: 800, height: 600 }
-    });
-
-    console.log(`✅ Image loaded: ${src}`);
-  };
-
   const report = getPerformanceReport();
 
   return (

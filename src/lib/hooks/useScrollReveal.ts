@@ -22,6 +22,17 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(options:
   } = options;
 
   useEffect(() => {
+    // Respeitar prefers-reduced-motion: revelar sem animações
+    const prefersReducedMotion = typeof window !== "undefined"
+      ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      : false;
+
+    if (prefersReducedMotion) {
+      setIsVisible(true);
+      setHasTriggered(true);
+      return;
+    }
+
     const element = elementRef.current;
     if (!element) return;
 
@@ -64,7 +75,7 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(options:
     ref: elementRef,
     isVisible,
     className: isVisible
-      ? `opacity-100 translate-y-0 ${transitionClass}`
-      : `opacity-0 translate-y-8 ${transitionClass}`,
+      ? `opacity-100 ${prefersReducedMotion ? '' : 'translate-y-0'} ${transitionClass}`
+      : `opacity-0 ${prefersReducedMotion ? '' : 'translate-y-8'} ${transitionClass}`,
   };
 }

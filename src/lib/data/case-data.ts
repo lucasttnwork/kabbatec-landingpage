@@ -26,7 +26,7 @@ export const casesData: CaseData[] = [
     client: 'Elite Core',
     description: 'Academia premium executada com acabamento de alto padrão, equipamentos especializados e layout otimizado para experiência fitness completa.',
     image: {
-      src: '/cases/elite-core.jpg',
+      src: 'https://picsum.photos/seed/case-elite-core/1200/900',
       alt: 'Elite Core Academy - Academia premium executada pela Kabbatec'
     },
     metrics: {
@@ -36,9 +36,9 @@ export const casesData: CaseData[] = [
     },
     tags: ['Premium', 'Equipamentos', 'Fitness'],
     gallery: [
-      '/cases/elite-core-1.jpg',
-      '/cases/elite-core-2.jpg',
-      '/cases/elite-core-3.jpg'
+      'https://picsum.photos/seed/case-elite-core-1/1200/900',
+      'https://picsum.photos/seed/case-elite-core-2/1200/900',
+      'https://picsum.photos/seed/case-elite-core-3/1200/900'
     ]
   },
   {
@@ -47,7 +47,7 @@ export const casesData: CaseData[] = [
     client: 'First Move',
     description: 'Estúdio moderno com conceito inovador de treinamento funcional, executado com materiais premium e design arquitetônico personalizado.',
     image: {
-      src: '/cases/first-move.jpg',
+      src: 'https://picsum.photos/seed/case-first-move/1200/900',
       alt: 'First Move Studio - Estúdio moderno executado pela Kabbatec'
     },
     metrics: {
@@ -57,8 +57,8 @@ export const casesData: CaseData[] = [
     },
     tags: ['Moderno', 'Funcional', 'Personalizado'],
     gallery: [
-      '/cases/first-move-1.jpg',
-      '/cases/first-move-2.jpg'
+      'https://picsum.photos/seed/case-first-move-1/1200/900',
+      'https://picsum.photos/seed/case-first-move-2/1200/900'
     ]
   },
   {
@@ -67,7 +67,7 @@ export const casesData: CaseData[] = [
     client: 'Two Ases',
     description: 'Rede de academias premium com identidade visual forte, executadas com padrão de qualidade excepcional e atenção aos detalhes.',
     image: {
-      src: '/cases/two-ases.jpg',
+      src: 'https://picsum.photos/seed/case-two-ases/1200/900',
       alt: 'Two Ases Fitness - Rede premium executada pela Kabbatec'
     },
     metrics: {
@@ -77,10 +77,10 @@ export const casesData: CaseData[] = [
     },
     tags: ['Rede', 'Premium', 'Identidade'],
     gallery: [
-      '/cases/two-ases-1.jpg',
-      '/cases/two-ases-2.jpg',
-      '/cases/two-ases-3.jpg',
-      '/cases/two-ases-4.jpg'
+      'https://picsum.photos/seed/case-two-ases-1/1200/900',
+      'https://picsum.photos/seed/case-two-ases-2/1200/900',
+      'https://picsum.photos/seed/case-two-ases-3/1200/900',
+      'https://picsum.photos/seed/case-two-ases-4/1200/900'
     ]
   }
 ];

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CaseData } from "@/lib/data/case-data";
@@ -23,8 +24,6 @@ export function Lightbox({
   currentIndex,
   totalCases,
   onClose,
-  onNext,
-  onPrev,
   onGoToCase,
 }: LightboxProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -45,6 +44,35 @@ export function Lightbox({
       setZoomPosition({ x: 0, y: 0 });
     }
   }, [currentCase]);
+
+  // Navigation handlers
+  const handlePrevImage = () => {
+    if (!currentCase?.gallery) return;
+    setCurrentImageIndex((prev) =>
+      prev > 0 ? prev - 1 : (currentCase.gallery?.length || 0)
+    );
+    setIsZoomed(false);
+    setZoomPosition({ x: 0, y: 0 });
+  };
+
+  const handleNextImage = () => {
+    if (!currentCase?.gallery) return;
+    setCurrentImageIndex((prev) =>
+      prev < (currentCase.gallery?.length || 0) ? prev + 1 : 0
+    );
+    setIsZoomed(false);
+    setZoomPosition({ x: 0, y: 0 });
+  };
+
+  const handlePrevCase = () => {
+    const newIndex = currentIndex > 0 ? currentIndex - 1 : totalCases - 1;
+    onGoToCase(newIndex);
+  };
+
+  const handleNextCase = () => {
+    const newIndex = currentIndex < totalCases - 1 ? currentIndex + 1 : 0;
+    onGoToCase(newIndex);
+  };
 
   // Handle escape key and prevent scroll
   useEffect(() => {
@@ -85,7 +113,7 @@ export function Lightbox({
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('wheel', handleScroll);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, handleNextCase, handleNextImage, handlePrevCase, handlePrevImage]);
 
   // Touch gesture handling
   const handleTouchStart = (event: React.TouchEvent) => {
@@ -161,35 +189,6 @@ export function Lightbox({
       }
     }
     setIsZoomed(!isZoomed);
-  };
-
-  // Navigation handlers
-  const handlePrevImage = () => {
-    if (!currentCase?.gallery) return;
-    setCurrentImageIndex((prev) =>
-      prev > 0 ? prev - 1 : (currentCase.gallery?.length || 0)
-    );
-    setIsZoomed(false);
-    setZoomPosition({ x: 0, y: 0 });
-  };
-
-  const handleNextImage = () => {
-    if (!currentCase?.gallery) return;
-    setCurrentImageIndex((prev) =>
-      prev < (currentCase.gallery?.length || 0) ? prev + 1 : 0
-    );
-    setIsZoomed(false);
-    setZoomPosition({ x: 0, y: 0 });
-  };
-
-  const handlePrevCase = () => {
-    const newIndex = currentIndex > 0 ? currentIndex - 1 : totalCases - 1;
-    onGoToCase(newIndex);
-  };
-
-  const handleNextCase = () => {
-    const newIndex = currentIndex < totalCases - 1 ? currentIndex + 1 : 0;
-    onGoToCase(newIndex);
   };
 
   // Get current image (main image or from gallery)
@@ -269,10 +268,14 @@ export function Lightbox({
             maxHeight: '90vh'
           }}
         >
-          <img
+          <Image
             ref={imageRef}
             src={currentImage.src}
             alt={currentImage.alt}
+            width={1200}
+            height={800}
+            unoptimized
+            loading="eager"
             className={`w-full h-full object-contain transition-transform duration-300 ${
               isZoomed ? 'cursor-grab active:cursor-grabbing' : 'cursor-zoom-in'
             }`}
@@ -351,9 +354,13 @@ export function Lightbox({
                 }`}
                 aria-label="Imagem principal"
               >
-                <img
+                <Image
                   src={currentCase.image.src}
                   alt="Thumbnail principal"
+                  width={64}
+                  height={48}
+                  unoptimized
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </button>
@@ -368,9 +375,13 @@ export function Lightbox({
                   }`}
                   aria-label={`Imagem ${index + 2}`}
                 >
-                  <img
+                  <Image
                     src={imageSrc}
                     alt={`Thumbnail ${index + 2}`}
+                    width={64}
+                    height={48}
+                    unoptimized
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </button>

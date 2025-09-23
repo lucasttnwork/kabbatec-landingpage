@@ -1,0 +1,427 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Pular para conteúdo principal" [ref=e2]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "K Kabbatec" [ref=e6]:
+        - /url: /
+        - generic [ref=e8]: K
+        - generic [ref=e9]: Kabbatec
+      - navigation "Primária" [ref=e10]:
+        - link "Nossa Abordagem" [ref=e11]:
+          - /url: "#observacao"
+        - link "Cases" [ref=e12]:
+          - /url: "#cases"
+        - link "Padrão" [ref=e13]:
+          - /url: "#padrao"
+        - link "Contato" [ref=e14]:
+          - /url: "#contato"
+      - link "Conversa Seletiva" [ref=e16]:
+        - /url: "#contato"
+        - button "Conversa Seletiva" [ref=e17]
+      - button "Abrir menu" [ref=e18]:
+        - img
+  - generic [ref=e20]:
+    - heading "Kabbatec — Engenharia premium para academias personalizadas em São Paulo" [level=1] [ref=e21]
+    - main [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e28]: A diferença entre imaginar e fazer de verdade
+            - heading "Para visionários que não aceitam 'mais ou menos'" [level=1] [ref=e29]
+            - generic [ref=e30]:
+              - paragraph [ref=e31]:
+                - generic [ref=e32]: Alguns
+                - generic [ref=e33]: controem
+                - generic [ref=e34]: academias.
+              - paragraph [ref=e35]:
+                - generic [ref=e36]: Nós
+                - generic [ref=e37]: criamos
+                - generic [ref=e38]: referencias.
+            - generic [ref=e39]:
+              - link "Sua visão merece este cuidado" [ref=e40]:
+                - /url: "#contato"
+                - button "Sua visão merece este cuidado" [ref=e42]
+              - link "Conheça o padrão reconhecido" [ref=e43]:
+                - /url: "#cases"
+                - button "Conheça o padrão reconhecido" [ref=e44]
+            - generic [ref=e45]:
+              - generic [ref=e47]: Elite Core sabia
+              - generic [ref=e49]: First Move sabia
+              - generic [ref=e51]: Two Ases sabia
+          - img "Fernando - Kabbatec" [ref=e54]
+        - generic [ref=e57]: SCROLL
+      - generic [ref=e61]:
+        - generic [ref=e63]: A filosofia que guia nosso trabalho
+        - figure [ref=e64]:
+          - img [ref=e65]
+          - generic [ref=e67]:
+            - blockquote [ref=e68]:
+              - text: "\"Good design is"
+              - generic [ref=e69]: invisible
+              - text: . Great design is
+              - generic [ref=e70]: unforgettable
+              - text: ."
+            - generic [ref=e72]: Joe Sparano
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e78]: Observação Íntima
+          - heading "Ontem, visitando a Two Ases em Moema, notei algo curioso" [level=2] [ref=e79]
+        - generic [ref=e80]:
+          - article [ref=e81]:
+            - generic [ref=e82]:
+              - paragraph [ref=e83]: Os alunos nem percebem conscientemente. Mas sentem.
+              - paragraph [ref=e84]: "É aquela sensação indefinível quando você entra em um espaço e pensa: \"isso é diferente\". Cada detalhe sussurra excelência. Cada acabamento respira cuidado. Cada escolha declara: aqui, perfeccionismo não é opcional."
+            - generic [ref=e85]:
+              - paragraph [ref=e86]: "O dono da Two Ases me disse algo revelador:"
+              - blockquote [ref=e87]: "\"Pela primeira vez, alguém que não precisou de explicações.\""
+            - generic [ref=e88]:
+              - paragraph [ref=e89]: Entendemos visionários porque pensamos como eles.
+              - paragraph [ref=e90]: Fernando Reis não é apenas engenheiro — é alguém que vê o que você vê.
+              - paragraph [ref=e91]: Silvio não é apenas parceiro — é quem protege sua visão até o fim.
+            - paragraph [ref=e93]: A diferença que se sente antes mesmo de notar.
+          - complementary [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e97]:
+                - 'img "Two Ases - Moema: onde os alunos sentem a diferença"'
+              - generic [ref=e99]: Two Ases - Moema
+              - generic [ref=e100]:
+                - paragraph [ref=e101]: "\"Nove alunos por horário. Moema entendeu.\""
+                - paragraph [ref=e102]: A densidade premium que se sente antes mesmo de notar.
+      - generic [ref=e105]:
+        - heading "\"Por que algumas academias viram referência e outras passam despercebidas?\"" [level=2] [ref=e107]
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: Você já sabe a resposta.
+            - generic [ref=e111]:
+              - paragraph [ref=e112]:
+                - text: É a diferença entre aceitar
+                - generic [ref=e113]: "\"vai ficar bom\""
+                - text: e exigir
+                - generic [ref=e114]: "\"como deveria ser sempre\""
+                - text: .
+              - paragraph [ref=e115]:
+                - text: Entre
+                - generic [ref=e116]: fornecedores que fazem o combinado
+                - text: e
+                - generic [ref=e117]: parceiros que entendem o não-dito
+                - text: .
+              - paragraph [ref=e118]:
+                - text: Entre
+                - generic [ref=e119]: construir um espaço
+                - text: e
+                - generic [ref=e120]: criar um padrão
+                - text: .
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: Quantas vezes você explicou sua visão e recebeu de volta... uma versão diluída?
+            - paragraph [ref=e124]: Quantas concessões você fez porque "assim também funciona"?
+            - paragraph [ref=e125]: "Quantas noites você pensou: \"não era bem isso que eu imaginava\"?"
+          - generic [ref=e127]:
+            - heading "Visionários merecem mais que promessas." [level=3] [ref=e128]
+            - paragraph [ref=e129]: Merecem parceiros que protegem sua visão como se fosse deles.
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: Porque no final, seus concorrentes vão estudar o que você criou.
+            - paragraph [ref=e132]: Ou vão ignorar.
+            - paragraph [ref=e133]: A escolha acontece agora.
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - img [ref=e139]
+            - text: Por que escolher a Kabbatec
+          - heading "Tudo que você precisa paraconstruir academias premium" [level=2] [ref=e141]:
+            - text: Tudo que você precisa para
+            - generic [ref=e142]: construir academias premium
+          - paragraph [ref=e143]: Metodologia comprovada que transforma projetos únicos em realidade, preservando cada detalhe personalizado em 70 dias.
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - heading "Escolha seu foco" [level=3] [ref=e147]
+            - button "Fidelidade ao Projeto Executamos seguindo metodologia aprovada por Raquel Kabbani, preservando cada detalhe personalizado intacto." [ref=e148]:
+              - generic [ref=e149]:
+                - img [ref=e151]
+                - generic [ref=e153]:
+                  - heading "Fidelidade ao Projeto" [level=4] [ref=e154]
+                  - paragraph [ref=e155]: Executamos seguindo metodologia aprovada por Raquel Kabbani, preservando cada detalhe personalizado intacto.
+            - button "Entrega Garantida Enquanto construtoras tradicionais têm filas de meses, garantimos início imediato e entrega em 70 dias." [ref=e156]:
+              - generic [ref=e157]:
+                - img [ref=e159]
+                - generic [ref=e161]:
+                  - heading "Entrega Garantida" [level=4] [ref=e162]
+                  - paragraph [ref=e163]: Enquanto construtoras tradicionais têm filas de meses, garantimos início imediato e entrega em 70 dias.
+            - button "Transparência Total Documentação fotográfica completa de cada etapa. Você acompanha tudo em tempo real." [ref=e164]:
+              - generic [ref=e165]:
+                - img [ref=e167]
+                - generic [ref=e170]:
+                  - heading "Transparência Total" [level=4] [ref=e171]
+                  - paragraph [ref=e172]: Documentação fotográfica completa de cada etapa. Você acompanha tudo em tempo real.
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - img [ref=e177]
+              - generic [ref=e179]:
+                - heading "Fidelidade ao Projeto" [level=3] [ref=e180]
+                - paragraph [ref=e181]: Executamos seguindo metodologia aprovada por Raquel Kabbani, preservando cada detalhe personalizado intacto.
+            - generic [ref=e182]:
+              - generic [ref=e183]:
+                - img [ref=e185]
+                - generic [ref=e187]:
+                  - heading "Zero Adaptações Genéricas" [level=4] [ref=e188]
+                  - paragraph [ref=e189]: Seu projeto único vira realidade exata
+              - generic [ref=e190]:
+                - img [ref=e192]
+                - generic [ref=e194]:
+                  - heading "Metodologia Comprovada" [level=4] [ref=e195]
+                  - paragraph [ref=e196]: Aprovada por Raquel Kabbani
+              - generic [ref=e197]:
+                - img [ref=e199]
+                - generic [ref=e201]:
+                  - heading "Equipe Especializada" [level=4] [ref=e202]
+                  - paragraph [ref=e203]: "Fernando + Silvio: competência técnica"
+            - generic [ref=e205]:
+              - generic [ref=e206]: Taxa de Sucesso
+              - generic [ref=e207]: 100%
+      - heading "Cases de referência" [level=2] [ref=e208]
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - paragraph [ref=e213]: Portfolio
+          - heading "Alguns resultados você não precisa explicar. Apenas existem." [level=2] [ref=e214]
+        - generic [ref=e217]:
+          - generic [ref=e218]:
+            - generic [ref=e219]:
+              - img "Elite Core"
+              - generic [ref=e221]: Referência
+            - generic [ref=e222]:
+              - heading "Elite Core" [level=3] [ref=e223]
+              - paragraph [ref=e224]: "“Não queria ser mais uma. Hoje é a única.” Quando conhecemos a visão da Elite Core, entendemos: isso não é sobre construir uma academia. É sobre estabelecer o novo padrão de Vila Olímpia. Cada centímetro curado. Cada material questionado. Cada detalhe elevado. Resultado: Referência absoluta. Ponto."
+              - generic [ref=e225]:
+                - generic [ref=e226]: Cada centímetro curado
+                - generic [ref=e227]: Materiais questionados
+                - generic [ref=e228]: Detalhes elevados
+                - generic [ref=e229]: +2 mais
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - img "First Move"
+              - generic [ref=e233]: Reinvenção
+            - generic [ref=e234]:
+              - heading "First Move" [level=3] [ref=e235]
+              - paragraph [ref=e236]: "“Reinventou o conceito antes mesmo de abrir.” First Move tinha uma obsessão: criar algo que fizesse profissionais de alta performance pararem e pensarem “finalmente”. Não explicamos como fazer. Nós fizemos. Resultado: Vila Olímpia já considera o padrão."
+              - generic [ref=e237]:
+                - generic [ref=e238]: Obcecado pelo 'finalmente'
+                - generic [ref=e239]: Alta performance
+                - generic [ref=e240]: Fizemos, não explicamos
+                - generic [ref=e241]: +1 mais
+          - generic [ref=e242]:
+            - generic [ref=e243]:
+              - img "Two Ases"
+              - generic [ref=e245]: Densidade Premium
+              - generic [ref=e247]:
+                - generic [ref=e248]: "9"
+                - generic [ref=e249]: Alunos/Horário
+            - generic [ref=e250]:
+              - heading "Two Ases" [level=3] [ref=e251]
+              - paragraph [ref=e252]: "“Nove alunos por horário. Moema entendeu.” Densidade premium não se explica, se sente. Two Ases precisava que cada detalhe justificasse o preço. E cada detalhe justifica. Resultado: Concorrentes mandam equipes para “entender como”."
+              - generic [ref=e253]:
+                - generic [ref=e254]: Densidade premium
+                - generic [ref=e255]: Cada detalhe justifica
+                - generic [ref=e256]: Reconhecimento de Moema
+                - generic [ref=e257]: +1 mais
+        - generic [ref=e259]:
+          - heading "Pronto para criar sua referência?" [level=3] [ref=e260]
+          - paragraph [ref=e261]: Trabalhamos com 5 projetos por vez. Máximo.
+          - generic [ref=e262]:
+            - link "Vamos conversar" [ref=e264]:
+              - /url: "#contato"
+              - button "Vamos conversar" [ref=e265]
+            - generic [ref=e267]:
+              - img [ref=e268]
+              - text: Apenas 5 projetos simultâneos
+      - heading "Padrão Kabbatec" [level=2] [ref=e270]
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - heading "Da visão à realidade, sem concessões" [level=2] [ref=e275]
+          - paragraph [ref=e276]:
+            - generic [ref=e277]: Existe um padrão que perfeccionistas reconhecem.
+            - generic [ref=e278]: Não é sobre materiais caros — é sobre os materiais certos.
+            - generic [ref=e279]: Não é sobre fazer rápido — é sobre fazer uma vez, perfeito.
+            - generic [ref=e280]: Não é sobre impressionar — é sobre o resultado falar por si.
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - img [ref=e285]
+            - generic [ref=e290]:
+              - heading "Curadoria Pessoal" [level=3] [ref=e291]
+              - paragraph [ref=e292]: Fernando e Silvio em cada projeto. Sem intermediários. Sem telefone sem fio. Sua visão, protegida.
+          - generic [ref=e293]:
+            - img [ref=e296]
+            - generic [ref=e299]:
+              - heading "Padrão Inegociável" [level=3] [ref=e300]
+              - paragraph [ref=e301]: "\"Mais ou menos\" não existe no nosso vocabulário. Se não está perfeito, refazemos."
+          - generic [ref=e302]:
+            - img [ref=e305]
+            - generic [ref=e307]:
+              - heading "Você Sabe Tudo. Sempre." [level=3] [ref=e308]
+              - paragraph [ref=e309]: Transparência absoluta. Cada decisão. Cada mudança. Cada detalhe. Como deve ser.
+          - generic [ref=e310]:
+            - img [ref=e313]
+            - generic [ref=e315]:
+              - heading "Continuidade Kabbani" [level=3] [ref=e316]
+              - paragraph [ref=e317]: O mesmo padrão que criou as referências que você admira. De Raquel Kabbani à Kabbatec.
+        - generic [ref=e319]:
+          - paragraph [ref=e320]: Não é sobre fazer rápido — é sobre fazer uma vez, perfeito.
+          - link "Vamos criar seu padrão" [ref=e321]:
+            - /url: "#contato"
+            - button "Vamos criar seu padrão" [ref=e322]
+      - heading "Prova social" [level=2] [ref=e323]
+      - generic [ref=e326]:
+        - heading "O que dizem quando pensam que não estamos ouvindo" [level=2] [ref=e331]
+        - generic [ref=e332]:
+          - generic [ref=e335]:
+            - generic [ref=e337]: Cliente
+            - generic [ref=e338]:
+              - img [ref=e340]
+              - generic [ref=e346]:
+                - blockquote [ref=e348]: "\"Meus concorrentes estudam o que criamos juntos.\""
+                - paragraph [ref=e350]: — Fundador, Elite Core
+          - generic [ref=e353]:
+            - generic [ref=e355]: Cliente
+            - generic [ref=e356]:
+              - img [ref=e358]
+              - generic [ref=e362]:
+                - blockquote [ref=e364]: "\"Finalmente o padrão que eu esperava encontrar.\""
+                - paragraph [ref=e366]: — CEO, First Move
+          - generic [ref=e369]:
+            - generic [ref=e371]: Cliente
+            - generic [ref=e372]:
+              - img [ref=e374]
+              - generic [ref=e377]:
+                - blockquote [ref=e379]: "\"Dormi tranquilo durante toda a obra. Primeira vez.\""
+                - paragraph [ref=e381]: — Proprietário, Two Ases
+          - generic [ref=e384]:
+            - generic [ref=e386]: Cliente
+            - generic [ref=e387]:
+              - img [ref=e389]
+              - generic [ref=e392]:
+                - blockquote [ref=e394]: "\"Cada detalhe pensado para impressionar. E impressiona.\""
+                - paragraph [ref=e396]: — Sócio, Projeto em andamento
+        - generic [ref=e400]:
+          - img [ref=e402]
+          - paragraph [ref=e405]: Cada detalhe pensado para impressionar. E impressiona.
+      - heading "Matemática do Valor" [level=2] [ref=e406]
+      - generic [ref=e409]:
+        - heading "Quanto custa aceitar \"mais ou menos\"?" [level=2] [ref=e411]
+        - generic [ref=e412]:
+          - paragraph [ref=e413]: "Você conhece o preço real:"
+          - list [ref=e414]:
+            - listitem [ref=e415]: Clientes que entram e não sentem a diferença
+            - listitem [ref=e416]: Concorrentes que não se intimidam
+            - listitem [ref=e417]: Reformas constantes porque "ficou bom" envelhece rápido
+            - listitem [ref=e418]: A sensação permanente de "poderia ter sido melhor"
+        - generic [ref=e420]:
+          - paragraph [ref=e421]: Um projeto Kabbatec não é um custo.
+          - paragraph [ref=e422]: É o investimento em se tornar referência.
+          - paragraph [ref=e423]: R$ 2 milhões bem investidos > R$ 1 milhão desperdiçado em "mais ou menos"
+          - paragraph [ref=e424]: E você sabe que é verdade.
+      - heading "Convite Seletivo" [level=2] [ref=e425]
+      - generic [ref=e428]:
+        - heading "Nem todo visionário está pronto" [level=2] [ref=e430]
+        - generic [ref=e431]:
+          - paragraph [ref=e432]: Trabalhamos com 5 projetos por vez. Máximo.
+          - paragraph [ref=e433]: Porque excelência não escala fácil. Se escalasse, não seria excelência.
+          - generic [ref=e434]:
+            - paragraph [ref=e435]: "Se você:"
+            - list [ref=e436]:
+              - listitem [ref=e437]: Aceita que "bom" é suficiente
+              - listitem [ref=e438]: Precisa do "mais barato"
+              - listitem [ref=e439]: Tem pressa incompatível com perfeição
+            - paragraph [ref=e440]: Existem ótimas construtoras no mercado.
+          - generic [ref=e441]:
+            - paragraph [ref=e442]: "Mas se você:"
+            - list [ref=e443]:
+              - listitem [ref=e444]: Sabe a diferença que faz diferença
+              - listitem [ref=e445]: Entende que referências não nascem de concessões
+              - listitem [ref=e446]: Quer dormir tranquilo sabendo que sua visão está protegida
+        - generic [ref=e448]:
+          - heading "Se você entende a diferença, clique aqui" [level=3] [ref=e449]
+          - generic [ref=e452]:
+            - generic [ref=e453]: Progresso
+            - generic [ref=e454]: 3/5
+          - generic [ref=e455]:
+            - link "Conversa Seletiva" [ref=e457]:
+              - /url: "#contato"
+              - button "Conversa Seletiva" [ref=e458]
+            - generic [ref=e459]:
+              - generic [ref=e460]:
+                - img [ref=e461]
+                - text: Processo seletivo rigoroso
+              - generic [ref=e463]:
+                - img [ref=e464]
+                - text: Apenas 5 projetos por vez
+        - generic [ref=e466]:
+          - paragraph [ref=e467]: Alguns constroem. Nós criamos referências.
+          - paragraph [ref=e468]: A diferença? Você sente, seus clientes admiram, seus concorrentes estudam.
+      - heading "Contato" [level=2] [ref=e469]
+      - generic [ref=e472]:
+        - generic [ref=e473]: Pronto para o próximo nível
+        - heading "Vamos construir sua referência em SP" [level=2] [ref=e474]
+        - paragraph [ref=e475]: Conte sua visão e receba uma proposta direta, sem rodeios.
+        - generic [ref=e476]:
+          - link "Falar com especialista" [ref=e477]:
+            - /url: mailto:contato@kabbatec.com?subject=Projeto%20Academia%20Personalizada
+            - button "Falar com especialista" [ref=e478]
+          - link "Ver padrões de execução" [ref=e479]:
+            - /url: "#cases"
+            - button "Ver padrões de execução" [ref=e480]
+      - contentinfo [ref=e481]:
+        - generic [ref=e483]:
+          - generic [ref=e484]:
+            - generic [ref=e485]:
+              - link "K Kabbatec" [ref=e486]:
+                - /url: /
+                - generic [ref=e488]: K
+                - generic [ref=e489]: Kabbatec
+              - paragraph [ref=e490]: Engenharia premium para visionários que não aceitam "mais ou menos". Criamos referências que seus concorrentes estudam.
+              - link "Conversa Seletiva" [ref=e492]:
+                - /url: "#contato"
+            - generic [ref=e493]:
+              - heading "Navegação" [level=4] [ref=e494]
+              - list "Navegação" [ref=e495]:
+                - listitem [ref=e496]:
+                  - link "Nossa Abordagem" [ref=e497]:
+                    - /url: "#observacao"
+                - listitem [ref=e498]:
+                  - link "Cases" [ref=e499]:
+                    - /url: "#cases"
+                - listitem [ref=e500]:
+                  - link "Padrão" [ref=e501]:
+                    - /url: "#padrao"
+                - listitem [ref=e502]:
+                  - link "Contato" [ref=e503]:
+                    - /url: "#contato"
+            - generic [ref=e504]:
+              - heading "Contato" [level=4] [ref=e505]
+              - generic [ref=e506]:
+                - generic [ref=e507]:
+                  - img [ref=e508]
+                  - link "visionarios@kabbatec.com.br" [ref=e510]:
+                    - /url: mailto:visionarios@kabbatec.com.br
+                - generic [ref=e511]:
+                  - img [ref=e512]
+                  - generic [ref=e514]: WhatsApp Seletivo
+                - generic [ref=e515]:
+                  - img [ref=e516]
+                  - generic [ref=e519]: São Paulo, SP
+          - generic [ref=e521]:
+            - generic [ref=e522]:
+              - generic [ref=e524]: Fernando Reis & Silvio
+              - generic [ref=e525]: •
+              - generic [ref=e526]: Onde perfeccionistas se encontram
+            - generic [ref=e528]: Elite Core • First Move • Two Ases
+          - generic [ref=e530]:
+            - paragraph [ref=e531]: © 2025 Kabbatec. O padrão que perfeccionistas reconhecem.
+            - generic [ref=e532]:
+              - generic [ref=e533]: Padrão Kabbani
+              - generic [ref=e534]: •
+              - generic [ref=e535]: 5+ anos de excelência
+              - generic [ref=e536]: •
+              - generic [ref=e537]: 50+ projetos realizados
+```

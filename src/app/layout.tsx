@@ -1,11 +1,9 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Suspense } from "react";
-import { GoogleAnalytics, FacebookPixel } from "@/components/analytics/GoogleAnalytics";
-import { ErrorBoundary } from "@/components/monitoring/ErrorBoundary";
-import { FeatureFlagsProvider } from "@/lib/feature-flags/FeatureFlags";
+import { Inter, Playfair_Display } from "next/font/google";
 import { SchemaHead } from "@/components/seo/SchemaHead";
+import { Header } from "@/components/layout/header";
+
+import "@/app/globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,9 +11,15 @@ const inter = Inter({
   display: "swap",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Kabbatec - Academias Personalizadas SP",
-  description: "A diferença entre sua academia personalizada virar realidade e ser destruída por adaptações genéricas. Especialistas em projetos premium para academias em São Paulo.",
+  description: "Engenharia premium para academias personalizadas em São Paulo. Projeto fiel, início imediato e entrega em 70 dias sem retrabalho.",
   keywords: "academia personalizada, projeto academia, arquitetura academia, consultoria academia, São Paulo",
   authors: [{ name: "Kabbatec" }],
   creator: "Kabbatec",
@@ -38,7 +42,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/next.svg",
         width: 1200,
         height: 630,
         alt: "Kabbatec - Especialistas em Academias Personalizadas",
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
     title: "Kabbatec - Academia Personalizada Sem Dor de Cabeça",
     description: "Especialistas em projetos premium para academias em São Paulo.",
     creator: "@kabbatec",
-    images: ["/og-image.jpg"],
+    images: ["/next.svg"],
   },
   robots: {
     index: true,
@@ -74,22 +78,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
+    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable} dark`}>
       <head>
+        <title>Kabbatec — Academias Personalizadas SP</title>
+        <meta name="description" content="Engenharia premium para academias personalizadas em São Paulo. Projeto fiel, início imediato e entrega em 70 dias sem retrabalho." />
         <SchemaHead />
       </head>
-      <body className="font-sans">
-        <ErrorBoundary>
-          <FeatureFlagsProvider>
-            {children}
-            <Suspense fallback={null}>
-              <GoogleAnalytics />
-            </Suspense>
-            <Suspense fallback={null}>
-              <FacebookPixel />
-            </Suspense>
-          </FeatureFlagsProvider>
-        </ErrorBoundary>
+      <body className="font-sans overflow-x-visible bg-black text-white antialiased">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded-md">Pular para conteúdo principal</a>
+        <Header />
+        {children}
       </body>
     </html>
   );

@@ -1,114 +1,124 @@
-import React from "react";
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import fernandoImg from "@/../assets/hero_fernando1.png";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Section } from "@/components/layout/section";
-import { Container } from "@/components/layout/container";
-import { useScrollReveal } from "@/lib/hooks/useScrollReveal";
-import { useHoverLift } from "@/lib/hooks/useHoverLift";
+import BlurText from "@/components/ui/blur-text";
+import GlowText from "@/components/ui/glow-text";
+import { LightBar } from "@/components/ui/light-bar";
 
 export function HeroSection() {
-  // Scroll reveal para o conteúdo principal
-  const contentReveal = useScrollReveal({ threshold: 0.3, delay: 200 });
-  // Scroll reveal para os badges
-  const badgesReveal = useScrollReveal({ threshold: 0.3, delay: 100 });
-  // Scroll reveal para os botões
-  const buttonsReveal = useScrollReveal({ threshold: 0.3, delay: 400 });
-
-  // Hover lift para os botões
-  const primaryButtonHover = useHoverLift({ liftAmount: "-translate-y-1" });
-  const secondaryButtonHover = useHoverLift({ liftAmount: "-translate-y-1" });
-
   return (
-    <Section className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Background Image - Temporário até ter imagem real */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+    <section className="relative overflow-visible min-h-[80vh] flex items-center scroll-reveal pt-8 pb-6 bg-black">
 
-      {/* Scrim Gradiente para contraste AA */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
+      {/* Light Bar 2px abaixo do topo da hero (quase tocando a navbar) */}
+      <div className="absolute left-0 top-[2px] w-full z-10 overflow-visible">
+        <LightBar blur={false} overflow />
+      </div>
 
-      {/* Container Principal */}
-      <Container className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-          {/* Conteúdo Esquerda */}
-          <div
-            ref={contentReveal.ref}
-            className={`space-y-8 text-white ${contentReveal.className}`}
-          >
-            {/* Badges de Prova Social */}
-            <div
-              ref={badgesReveal.ref}
-              className={`flex flex-wrap gap-3 ${badgesReveal.className}`}
-            >
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
-                Elite Core ✓
-              </Badge>
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
-                First Move ✓
-              </Badge>
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
-                Two Ases ✓
-              </Badge>
+      <div className="container relative z-30">
+        <div className="max-w-7xl relative lg:grid lg:grid-cols-2 lg:items-center lg:gap-16 lg:mx-auto">
+          <div className="space-y-8 sm:space-y-10 lg:pl-4">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-white/8 border border-white/15 backdrop-blur-sm shadow-[inset_0_0_15px_rgba(255,255,255,0.08)]">
+            <span className="inline-flex h-1.5 w-1.5 rounded-full bg-white/50 shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+            <span className="text-xs text-white font-inter font-light tracking-wide">A diferença entre imaginar e fazer de verdade</span>
+          </div>
+
+          {/* Headline (H1 com efeito de blur por palavras) */}
+          <BlurText
+            as="h1"
+            text="Para visionários que não aceitam 'mais ou menos'"
+            className="text-[48px] font-serif font-light text-white leading-[calc(1.1em+10px)] max-w-[40ch] tracking-[0.08em] uppercase"
+            animateBy="words"
+            direction="top"
+            delay={120}
+          />
+
+          <div className="mt-8 space-y-2">
+            <BlurText
+              text="Alguns controem academias."
+              className="text-[16px] font-inter font-normal text-white/50 leading-relaxed"
+              animateBy="words"
+              direction="top"
+              delay={1000}
+            />
+            <GlowText
+              text="Nós criamos referencias."
+              className="text-[44px] font-serif font-light text-white leading-[1.1] tracking-tight"
+              animateBy="words"
+              direction="top"
+              delay={1000}
+              glowType="static"
+              glowColor="rgba(255, 255, 255, 0.8)"
+              glowDelay={3000}
+            />
+          </div>
+
+          {/* CTA */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 pt-12 lg:pt-16">
+            <Link href="#contato">
+              <span className="relative inline-flex rounded-2xl p-[1px] bg-gradient-to-r from-white/15 to-white/8 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] transition-all duration-500">
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  className="bg-white/90 text-black hover:bg-white hover:text-black border border-white/25 backdrop-blur-sm font-inter font-semibold tracking-wide px-7 py-3.5 text-sm rounded-[1rem] hover-lift shadow-[inset_0_0_15px_rgba(255,255,255,0.2)] hover:shadow-[inset_0_0_25px_rgba(255,255,255,0.35)] hover:scale-105 transition-transform duration-300"
+                >
+                  Sua visão merece este cuidado
+                </Button>
+              </span>
+            </Link>
+            <Link href="#cases">
+              <Button variant="outline" size="lg" className="border-white/20 text-white/90 hover:bg-white/3 hover:border-white/30 font-inter font-extralight tracking-wide px-7 py-3.5 text-sm rounded-2xl backdrop-blur-sm hover-lift shadow-[0_0_15px_rgba(255,255,255,0.08)] hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]">
+                Conheça o padrão reconhecido
+              </Button>
+            </Link>
+          </div>
+
+          {/* Trust indicators */}
+          <div className="pt-4 flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-white/70">
+            <div className="relative flex items-center gap-2 px-4 py-2 border border-white/15 shadow-[inset_0_0_20px_rgba(255,255,255,0.12)] bg-white/5 font-inter font-light tracking-wide hover-lift cursor-pointer hover:border-white/25 hover:bg-white/8 transition-all duration-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
+              <span>Elite Core sabia</span>
             </div>
-
-            {/* Headline H1 - 56px */}
-            <h1 className="text-h1 font-bold leading-tight">
-              A diferença entre sua academia personalizada virar realidade e ser destruída por &ldquo;adaptações&rdquo; genéricas
-            </h1>
-
-            {/* Subheadline */}
-            <p className="text-body-lg text-white/90 leading-relaxed max-w-xl">
-              Como a Kabbatec executa projetos únicos de 600 a 1.000m² preservando cada detalhe personalizado em 70 dias, enquanto construtoras tradicionais destroem visões customizadas tentando encaixar tudo no mesmo molde viciado de sempre.
-            </p>
-
-            {/* CTA Buttons */}
-            <div
-              ref={buttonsReveal.ref}
-              className={`flex flex-col sm:flex-row gap-4 pt-4 ${buttonsReveal.className}`}
-            >
-              <Button
-                size="lg"
-                className={`bg-gradient-to-r from-[#F59E0B] to-[#D97706] hover:from-[#f6ae2e] hover:to-[#c76a05] text-white shadow-lg hover:shadow-xl transition-all duration-300 ${primaryButtonHover.className}`}
-                onMouseEnter={primaryButtonHover.onMouseEnter}
-                onMouseLeave={primaryButtonHover.onMouseLeave}
-                isLoading={false}
-              >
-                QUERO MINHA ANÁLISE GRATUITA
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className={`border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all duration-300 ${secondaryButtonHover.className}`}
-                onMouseEnter={secondaryButtonHover.onMouseEnter}
-                onMouseLeave={secondaryButtonHover.onMouseLeave}
-              >
-                CONHECER CASES
-              </Button>
+            <div className="relative flex items-center gap-2 px-4 py-2 border border-white/15 shadow-[inset_0_0_20px_rgba(255,255,255,0.12)] bg-white/5 font-inter font-light tracking-wide hover-lift cursor-pointer hover:border-white/25 hover:bg-white/8 transition-all duration-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
+              <span>First Move sabia</span>
+            </div>
+            <div className="relative flex items-center gap-2 px-4 py-2 border border-white/15 shadow-[inset_0_0_20px_rgba(255,255,255,0.12)] bg-white/5 font-inter font-light tracking-wide hover-lift cursor-pointer hover:border-white/25 hover:bg-white/8 transition-all duration-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
+              <span>Two Ases sabia</span>
             </div>
           </div>
 
-          {/* Visual Direita - Placeholder até ter imagem real */}
-          <div className="relative">
-            <div className="relative bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg p-12 h-96 lg:h-[500px] flex items-center justify-center">
-              <div className="text-center text-white/60">
-                <div className="text-6xl mb-4">🏗️</div>
-                <p className="text-lg">Hero Image</p>
-                <p className="text-sm opacity-75">Elite Core Academy</p>
-              </div>
+          </div>
 
-              {/* Elementos decorativos sutis */}
-              <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-[#F59E0B]/20 to-[#D97706]/20 rounded-full blur-sm" />
-              <div className="absolute bottom-8 left-8 w-12 h-12 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-full blur-sm" />
+          {/* Hero Portrait - Fernando */}
+          <div className="hidden lg:flex justify-center items-center pt-6 lg:pt-0">
+            <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.06)] w-full max-w-[400px] lg:max-w-[460px] xl:max-w-[500px] h-[480px] lg:h-[520px] xl:h-[560px]">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-white/3 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_40px_rgba(255,255,255,0.03)] rounded-[1.5rem]" />
+              <Image
+                src={fernandoImg}
+                alt="Fernando - Kabbatec"
+                width={720}
+                height={920}
+                priority
+                loading="eager"
+                className="w-full h-full object-cover mix-blend-lighten opacity-90" />
             </div>
           </div>
         </div>
-      </Container>
-
-      {/* Scroll indicator sutil */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
       </div>
-    </Section>
+
+      {/* Scroll indicator fixado no limite inferior da hero */}
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white/50 pointer-events-none">
+        <div className="flex flex-col items-center">
+          <div className="w-px h-16 bg-gradient-to-b from-white/60 to-transparent shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
+        </div>
+      </div>
+    </section>
   );
 }

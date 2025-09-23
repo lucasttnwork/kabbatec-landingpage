@@ -1,6 +1,7 @@
-import { Metadata } from 'next';
 
 // Schema.org markup para SEO avançado
+type SchemaOrgValue = string | number | boolean | null | Record<string, unknown> | SchemaOrgValue[];
+type SchemaOrgObject = Record<string, SchemaOrgValue>;
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -148,7 +149,7 @@ export function generateCaseStudySchema(caseData: {
 
 // Componente React para renderizar schemas
 interface SchemaMarkupProps {
-  schema: Record<string, any>;
+  schema: SchemaOrgObject;
 }
 
 export function SchemaMarkup({ schema }: SchemaMarkupProps) {

@@ -1,0 +1,1028 @@
+<testsuites id="" name="" tests="60" failures="18" skipped="0" errors="0" time="77.916455">
+<testsuite name="lighthouse.spec.ts" timestamp="2025-09-22T19:32:26.049Z" hostname="chromium" tests="10" failures="3" skipped="0" time="55.563" errors="0">
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores" classname="lighthouse.spec.ts" time="12.372">
+<failure message="lighthouse.spec.ts:83:11 home-lighthouse-scores" type="FAILURE">
+<![CDATA[  [chromium] › lighthouse.spec.ts:83:11 › 🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores 
+
+    Error: Imagem deve estar otimizada
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /\.(webp|avif|jpg|jpeg|png)$/
+    Received string:  "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_fernando1.839167cb.png&w=1920&q=75"
+
+      139 |           const src = await img.getAttribute('src');
+      140 |           if (src) {
+    > 141 |             expect(src, "Imagem deve estar otimizada").toMatch(/\.(webp|avif|jpg|jpeg|png)$/);
+          |                                                        ^
+      142 |           }
+      143 |         }
+      144 |       });
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:141:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › design-system-lighthouse-scores" classname="lighthouse.spec.ts" time="10.028">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › hero-preview-lighthouse-scores" classname="lighthouse.spec.ts" time="9.842">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação" classname="lighthouse.spec.ts" time="2.425">
+<failure message="lighthouse.spec.ts:149:9 Acessibilidade - Contraste e Navegação" type="FAILURE">
+<![CDATA[  [chromium] › lighthouse.spec.ts:149:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação 
+
+    Error: Deve haver exatamente 1 H1 por página
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      165 |       // Verificar headings hierárquicos
+      166 |       const h1Count = await page.locator('h1').count();
+    > 167 |       expect(h1Count, "Deve haver exatamente 1 H1 por página").toBe(1);
+          |                                                                ^
+      168 |
+      169 |       // Verificar se há lang attribute
+      170 |       const lang = await page.getAttribute('html', 'lang');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:167:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Navegação por Teclado" classname="lighthouse.spec.ts" time="3.221">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura" classname="lighthouse.spec.ts" time="1.677">
+<failure message="lighthouse.spec.ts:196:9 SEO - Meta Tags e Estrutura" type="FAILURE">
+<![CDATA[  [chromium] › lighthouse.spec.ts:196:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura 
+
+    Error: Title deve ter entre 30-60 caracteres
+
+    expect(received).toBeLessThan(expected)
+
+    Expected: < 60
+    Received:   74
+
+      200 |       const title = await page.title();
+      201 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeGreaterThan(30);
+    > 202 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeLessThan(60);
+          |                                                                     ^
+      203 |
+      204 |       // Verificar meta description
+      205 |       const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:202:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Performance e Estrutura" classname="lighthouse.spec.ts" time="2.398">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Segurança e Performance" classname="lighthouse.spec.ts" time="2.25">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Bundle e Recursos" classname="lighthouse.spec.ts" time="2.662">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📱 Performance Budgets › Performance Budget - Métricas Críticas" classname="lighthouse.spec.ts" time="8.688">
+</testcase>
+</testsuite>
+<testsuite name="lighthouse.spec.ts" timestamp="2025-09-22T19:32:26.049Z" hostname="firefox" tests="10" failures="3" skipped="0" time="54.126" errors="0">
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores" classname="lighthouse.spec.ts" time="12.323">
+<failure message="lighthouse.spec.ts:83:11 home-lighthouse-scores" type="FAILURE">
+<![CDATA[  [firefox] › lighthouse.spec.ts:83:11 › 🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores 
+
+    Error: Imagem deve estar otimizada
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /\.(webp|avif|jpg|jpeg|png)$/
+    Received string:  "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_fernando1.839167cb.png&w=1920&q=75"
+
+      139 |           const src = await img.getAttribute('src');
+      140 |           if (src) {
+    > 141 |             expect(src, "Imagem deve estar otimizada").toMatch(/\.(webp|avif|jpg|jpeg|png)$/);
+          |                                                        ^
+      142 |           }
+      143 |         }
+      144 |       });
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:141:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › design-system-lighthouse-scores" classname="lighthouse.spec.ts" time="10.468">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › hero-preview-lighthouse-scores" classname="lighthouse.spec.ts" time="9.869">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação" classname="lighthouse.spec.ts" time="1.833">
+<failure message="lighthouse.spec.ts:149:9 Acessibilidade - Contraste e Navegação" type="FAILURE">
+<![CDATA[  [firefox] › lighthouse.spec.ts:149:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação 
+
+    Error: Deve haver exatamente 1 H1 por página
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      165 |       // Verificar headings hierárquicos
+      166 |       const h1Count = await page.locator('h1').count();
+    > 167 |       expect(h1Count, "Deve haver exatamente 1 H1 por página").toBe(1);
+          |                                                                ^
+      168 |
+      169 |       // Verificar se há lang attribute
+      170 |       const lang = await page.getAttribute('html', 'lang');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:167:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Navegação por Teclado" classname="lighthouse.spec.ts" time="4.796">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura" classname="lighthouse.spec.ts" time="3.963">
+<failure message="lighthouse.spec.ts:196:9 SEO - Meta Tags e Estrutura" type="FAILURE">
+<![CDATA[  [firefox] › lighthouse.spec.ts:196:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura 
+
+    Error: Title deve ter entre 30-60 caracteres
+
+    expect(received).toBeLessThan(expected)
+
+    Expected: < 60
+    Received:   74
+
+      200 |       const title = await page.title();
+      201 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeGreaterThan(30);
+    > 202 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeLessThan(60);
+          |                                                                     ^
+      203 |
+      204 |       // Verificar meta description
+      205 |       const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:202:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Performance e Estrutura" classname="lighthouse.spec.ts" time="3.317">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Segurança e Performance" classname="lighthouse.spec.ts" time="1.345">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Bundle e Recursos" classname="lighthouse.spec.ts" time="0.251">
+<system-out>
+<![CDATA[Skipping CDP test for firefox
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📱 Performance Budgets › Performance Budget - Métricas Críticas" classname="lighthouse.spec.ts" time="5.961">
+</testcase>
+</testsuite>
+<testsuite name="lighthouse.spec.ts" timestamp="2025-09-22T19:32:26.049Z" hostname="webkit" tests="10" failures="3" skipped="0" time="55.904" errors="0">
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores" classname="lighthouse.spec.ts" time="12.446">
+<failure message="lighthouse.spec.ts:83:11 home-lighthouse-scores" type="FAILURE">
+<![CDATA[  [webkit] › lighthouse.spec.ts:83:11 › 🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores 
+
+    Error: Imagem deve estar otimizada
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /\.(webp|avif|jpg|jpeg|png)$/
+    Received string:  "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_fernando1.839167cb.png&w=1920&q=75"
+
+      139 |           const src = await img.getAttribute('src');
+      140 |           if (src) {
+    > 141 |             expect(src, "Imagem deve estar otimizada").toMatch(/\.(webp|avif|jpg|jpeg|png)$/);
+          |                                                        ^
+      142 |           }
+      143 |         }
+      144 |       });
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:141:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › design-system-lighthouse-scores" classname="lighthouse.spec.ts" time="10.291">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › hero-preview-lighthouse-scores" classname="lighthouse.spec.ts" time="9.718">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação" classname="lighthouse.spec.ts" time="2.528">
+<failure message="lighthouse.spec.ts:149:9 Acessibilidade - Contraste e Navegação" type="FAILURE">
+<![CDATA[  [webkit] › lighthouse.spec.ts:149:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação 
+
+    Error: Deve haver exatamente 1 H1 por página
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      165 |       // Verificar headings hierárquicos
+      166 |       const h1Count = await page.locator('h1').count();
+    > 167 |       expect(h1Count, "Deve haver exatamente 1 H1 por página").toBe(1);
+          |                                                                ^
+      168 |
+      169 |       // Verificar se há lang attribute
+      170 |       const lang = await page.getAttribute('html', 'lang');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:167:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Navegação por Teclado" classname="lighthouse.spec.ts" time="3.934">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura" classname="lighthouse.spec.ts" time="2.153">
+<failure message="lighthouse.spec.ts:196:9 SEO - Meta Tags e Estrutura" type="FAILURE">
+<![CDATA[  [webkit] › lighthouse.spec.ts:196:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura 
+
+    Error: Title deve ter entre 30-60 caracteres
+
+    expect(received).toBeLessThan(expected)
+
+    Expected: < 60
+    Received:   74
+
+      200 |       const title = await page.title();
+      201 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeGreaterThan(30);
+    > 202 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeLessThan(60);
+          |                                                                     ^
+      203 |
+      204 |       // Verificar meta description
+      205 |       const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:202:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Performance e Estrutura" classname="lighthouse.spec.ts" time="2.666">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Segurança e Performance" classname="lighthouse.spec.ts" time="3.058">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Bundle e Recursos" classname="lighthouse.spec.ts" time="0.596">
+<system-out>
+<![CDATA[Skipping CDP test for webkit
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📱 Performance Budgets › Performance Budget - Métricas Críticas" classname="lighthouse.spec.ts" time="8.514">
+</testcase>
+</testsuite>
+<testsuite name="lighthouse.spec.ts" timestamp="2025-09-22T19:32:26.049Z" hostname="mobile-chrome" tests="10" failures="3" skipped="0" time="55.746" errors="0">
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores" classname="lighthouse.spec.ts" time="12.473">
+<failure message="lighthouse.spec.ts:83:11 home-lighthouse-scores" type="FAILURE">
+<![CDATA[  [mobile-chrome] › lighthouse.spec.ts:83:11 › 🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores 
+
+    Error: Imagem deve estar otimizada
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /\.(webp|avif|jpg|jpeg|png)$/
+    Received string:  "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_fernando1.839167cb.png&w=1920&q=75"
+
+      139 |           const src = await img.getAttribute('src');
+      140 |           if (src) {
+    > 141 |             expect(src, "Imagem deve estar otimizada").toMatch(/\.(webp|avif|jpg|jpeg|png)$/);
+          |                                                        ^
+      142 |           }
+      143 |         }
+      144 |       });
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:141:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › design-system-lighthouse-scores" classname="lighthouse.spec.ts" time="10.099">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › hero-preview-lighthouse-scores" classname="lighthouse.spec.ts" time="9.836">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação" classname="lighthouse.spec.ts" time="2.276">
+<failure message="lighthouse.spec.ts:149:9 Acessibilidade - Contraste e Navegação" type="FAILURE">
+<![CDATA[  [mobile-chrome] › lighthouse.spec.ts:149:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação 
+
+    Error: Deve haver exatamente 1 H1 por página
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      165 |       // Verificar headings hierárquicos
+      166 |       const h1Count = await page.locator('h1').count();
+    > 167 |       expect(h1Count, "Deve haver exatamente 1 H1 por página").toBe(1);
+          |                                                                ^
+      168 |
+      169 |       // Verificar se há lang attribute
+      170 |       const lang = await page.getAttribute('html', 'lang');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:167:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Navegação por Teclado" classname="lighthouse.spec.ts" time="3.307">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura" classname="lighthouse.spec.ts" time="2.307">
+<failure message="lighthouse.spec.ts:196:9 SEO - Meta Tags e Estrutura" type="FAILURE">
+<![CDATA[  [mobile-chrome] › lighthouse.spec.ts:196:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura 
+
+    Error: Title deve ter entre 30-60 caracteres
+
+    expect(received).toBeLessThan(expected)
+
+    Expected: < 60
+    Received:   74
+
+      200 |       const title = await page.title();
+      201 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeGreaterThan(30);
+    > 202 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeLessThan(60);
+          |                                                                     ^
+      203 |
+      204 |       // Verificar meta description
+      205 |       const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:202:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Performance e Estrutura" classname="lighthouse.spec.ts" time="2.699">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Segurança e Performance" classname="lighthouse.spec.ts" time="1.531">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Bundle e Recursos" classname="lighthouse.spec.ts" time="2.271">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📱 Performance Budgets › Performance Budget - Métricas Críticas" classname="lighthouse.spec.ts" time="8.947">
+</testcase>
+</testsuite>
+<testsuite name="lighthouse.spec.ts" timestamp="2025-09-22T19:32:26.049Z" hostname="mobile-safari" tests="10" failures="3" skipped="0" time="55.828" errors="0">
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores" classname="lighthouse.spec.ts" time="12.31">
+<failure message="lighthouse.spec.ts:83:11 home-lighthouse-scores" type="FAILURE">
+<![CDATA[  [mobile-safari] › lighthouse.spec.ts:83:11 › 🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores 
+
+    Error: Imagem deve estar otimizada
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /\.(webp|avif|jpg|jpeg|png)$/
+    Received string:  "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_fernando1.839167cb.png&w=1920&q=75"
+
+      139 |           const src = await img.getAttribute('src');
+      140 |           if (src) {
+    > 141 |             expect(src, "Imagem deve estar otimizada").toMatch(/\.(webp|avif|jpg|jpeg|png)$/);
+          |                                                        ^
+      142 |           }
+      143 |         }
+      144 |       });
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:141:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-mobile-safari\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › design-system-lighthouse-scores" classname="lighthouse.spec.ts" time="10.128">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › hero-preview-lighthouse-scores" classname="lighthouse.spec.ts" time="9.814">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação" classname="lighthouse.spec.ts" time="2.454">
+<failure message="lighthouse.spec.ts:149:9 Acessibilidade - Contraste e Navegação" type="FAILURE">
+<![CDATA[  [mobile-safari] › lighthouse.spec.ts:149:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação 
+
+    Error: Deve haver exatamente 1 H1 por página
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      165 |       // Verificar headings hierárquicos
+      166 |       const h1Count = await page.locator('h1').count();
+    > 167 |       expect(h1Count, "Deve haver exatamente 1 H1 por página").toBe(1);
+          |                                                                ^
+      168 |
+      169 |       // Verificar se há lang attribute
+      170 |       const lang = await page.getAttribute('html', 'lang');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:167:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-mobile-safari\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Navegação por Teclado" classname="lighthouse.spec.ts" time="3.638">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura" classname="lighthouse.spec.ts" time="2.451">
+<failure message="lighthouse.spec.ts:196:9 SEO - Meta Tags e Estrutura" type="FAILURE">
+<![CDATA[  [mobile-safari] › lighthouse.spec.ts:196:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura 
+
+    Error: Title deve ter entre 30-60 caracteres
+
+    expect(received).toBeLessThan(expected)
+
+    Expected: < 60
+    Received:   74
+
+      200 |       const title = await page.title();
+      201 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeGreaterThan(30);
+    > 202 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeLessThan(60);
+          |                                                                     ^
+      203 |
+      204 |       // Verificar meta description
+      205 |       const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:202:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-mobile-safari\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Performance e Estrutura" classname="lighthouse.spec.ts" time="2.809">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Segurança e Performance" classname="lighthouse.spec.ts" time="3.026">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Bundle e Recursos" classname="lighthouse.spec.ts" time="0.585">
+<system-out>
+<![CDATA[Skipping CDP test for webkit
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📱 Performance Budgets › Performance Budget - Métricas Críticas" classname="lighthouse.spec.ts" time="8.613">
+</testcase>
+</testsuite>
+<testsuite name="lighthouse.spec.ts" timestamp="2025-09-22T19:32:26.049Z" hostname="lighthouse" tests="10" failures="3" skipped="0" time="52.129" errors="0">
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores" classname="lighthouse.spec.ts" time="12.247">
+<failure message="lighthouse.spec.ts:83:11 home-lighthouse-scores" type="FAILURE">
+<![CDATA[  [lighthouse] › lighthouse.spec.ts:83:11 › 🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › home-lighthouse-scores 
+
+    Error: Imagem deve estar otimizada
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /\.(webp|avif|jpg|jpeg|png)$/
+    Received string:  "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_fernando1.839167cb.png&w=1920&q=75"
+
+      139 |           const src = await img.getAttribute('src');
+      140 |           if (src) {
+    > 141 |             expect(src, "Imagem deve estar otimizada").toMatch(/\.(webp|avif|jpg|jpeg|png)$/);
+          |                                                        ^
+      142 |           }
+      143 |         }
+      144 |       });
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:141:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-7c147-≥-95-home-lighthouse-scores-lighthouse\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › design-system-lighthouse-scores" classname="lighthouse.spec.ts" time="10.007">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📊 Lighthouse Scores ≥ 95 › hero-preview-lighthouse-scores" classname="lighthouse.spec.ts" time="9.889">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação" classname="lighthouse.spec.ts" time="2.308">
+<failure message="lighthouse.spec.ts:149:9 Acessibilidade - Contraste e Navegação" type="FAILURE">
+<![CDATA[  [lighthouse] › lighthouse.spec.ts:149:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Contraste e Navegação 
+
+    Error: Deve haver exatamente 1 H1 por página
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      165 |       // Verificar headings hierárquicos
+      166 |       const h1Count = await page.locator('h1').count();
+    > 167 |       expect(h1Count, "Deve haver exatamente 1 H1 por página").toBe(1);
+          |                                                                ^
+      168 |
+      169 |       // Verificar se há lang attribute
+      170 |       const lang = await page.getAttribute('html', 'lang');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:167:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-f88dc-ade---Contraste-e-Navegação-lighthouse\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ♿ Acessibilidade WCAG 2.1 AA › Acessibilidade - Navegação por Teclado" classname="lighthouse.spec.ts" time="2.548">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura" classname="lighthouse.spec.ts" time="1.555">
+<failure message="lighthouse.spec.ts:196:9 SEO - Meta Tags e Estrutura" type="FAILURE">
+<![CDATA[  [lighthouse] › lighthouse.spec.ts:196:9 › 🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Meta Tags e Estrutura 
+
+    Error: Title deve ter entre 30-60 caracteres
+
+    expect(received).toBeLessThan(expected)
+
+    Expected: < 60
+    Received:   74
+
+      200 |       const title = await page.title();
+      201 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeGreaterThan(30);
+    > 202 |       expect(title.length, "Title deve ter entre 30-60 caracteres").toBeLessThan(60);
+          |                                                                     ^
+      203 |
+      204 |       // Verificar meta description
+      205 |       const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
+        at C:\Users\Lucas\OneDrive\Documentos\Projetos cursor\Kabbatec Marketing\kabbatec-landing\tests\lighthouse.spec.ts:202:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\test-failed-1.png]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\video.webm]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\error-context.md]]
+
+[[ATTACHMENT|lighthouse-🚀-Lighthouse-I-6dad4-SEO---Meta-Tags-e-Estrutura-lighthouse\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 🔍 SEO Optimization › SEO - Performance e Estrutura" classname="lighthouse.spec.ts" time="1.4">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Segurança e Performance" classname="lighthouse.spec.ts" time="2.146">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › ⚡ Best Practices › Best Practices - Bundle e Recursos" classname="lighthouse.spec.ts" time="2.702">
+</testcase>
+<testcase name="🚀 Lighthouse Integration - SPRINT 3.2 › 📱 Performance Budgets › Performance Budget - Métricas Críticas" classname="lighthouse.spec.ts" time="7.327">
+</testcase>
+</testsuite>
+</testsuites>

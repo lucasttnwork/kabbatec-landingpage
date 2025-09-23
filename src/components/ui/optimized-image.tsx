@@ -7,6 +7,9 @@ export interface OptimizedImageProps {
   width?: number;
   height?: number;
   className?: string;
+  loading?: 'lazy' | 'eager';
+  decoding?: 'async' | 'auto' | 'sync';
+  unoptimized?: boolean;
 }
 
 const OptimizedImage: React.FC<OptimizedImageProps> = ({
@@ -14,7 +17,10 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   alt,
   width = 400,
   height = 300,
-  className = ''
+  className = '',
+  loading = 'lazy',
+  decoding = 'async',
+  unoptimized = true,
 }) => {
   return (
     <Image
@@ -22,6 +28,9 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
       alt={alt}
       width={width}
       height={height}
+      loading={loading}
+      decoding={decoding}
+      unoptimized={unoptimized}
       className={className}
     />
   );

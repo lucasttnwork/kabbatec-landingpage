@@ -1,5 +1,3 @@
-'use client';
-
 import { SchemaMarkup, usePageSchemas } from "@/lib/seo/SchemaMarkup";
 
 export function SchemaHead() {
