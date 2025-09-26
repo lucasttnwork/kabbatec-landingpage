@@ -68,6 +68,7 @@ export function CaseCard({ caseData, onClick }: CaseCardProps) {
           width={400}
           height={267}
           className="object-cover w-full h-full"
+          fallbackSrc={caseData.image.placeholder}
         />
 
         {/* Status Badge */}

@@ -9,7 +9,6 @@ import { ProblemSection } from "@/components/sections/problem-section";
 import { BenefitsSection } from "@/components/sections/benefits-section";
 import { CasesSection } from "@/components/sections/cases-section";
 import { PadraoKabbatecSection } from "@/components/sections/padrao-kabbatec-section";
-import { ProvaSocialSection } from "@/components/sections/prova-social-section";
 import { MatematicaValorSection } from "@/components/sections/matematica-valor-section";
 import { ConviteSeletivoSection } from "@/components/sections/convite-seletivo-section";
 import { ContatoSection } from "@/components/sections/contato-section";
@@ -46,50 +45,46 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       <main id="main-content" role="main">
-      {/* Hero Section */}
-      <HeroSection />
+        {/* Hero Section */}
+        <HeroSection />
 
-      {/* Infinite Slider (logo abaixo da hero) */}
-      <InfiniteSliderSection />
+        {/* Infinite Slider (logo abaixo da hero) */}
+        <InfiniteSliderSection />
 
-      {/* Cases de Referência */}
-      <h2 className="sr-only">Cases de referência</h2>
-      <CasesSection />
+        {/* Cases de Referência */}
+        <h2 className="sr-only">Cases de referência</h2>
+        <CasesSection />
 
-      {/* Quotes de Destaque */}
-      <QuotesSection />
+        {/* Quotes de Destaque */}
+        <QuotesSection />
 
-      {/* Observação Íntima */}
-      <ObservacaoIntimaSection />
+        {/* Observação Íntima */}
+        <ObservacaoIntimaSection />
 
-      {/* Problemas - Seção que será redesenhada na task 3 */}
-      <ProblemSection />
+        {/* Problemas - Seção que será redesenhada na task 3 */}
+        <ProblemSection />
 
-      {/* Por que escolher a Kabbatec */}
-      <BenefitsSection />
+        {/* Por que escolher a Kabbatec */}
+        <BenefitsSection />
 
-      {/* Padrão Kabbatec */}
-      <h2 className="sr-only">Padrão Kabbatec</h2>
-      <PadraoKabbatecSection />
+        {/* Padrão Kabbatec */}
+        <h2 className="sr-only">Padrão Kabbatec</h2>
+        <PadraoKabbatecSection />
 
-      {/* Prova Social Sutil */}
-      <h2 className="sr-only">Prova social</h2>
-      <ProvaSocialSection />
+        {/* Matemática do Valor */}
+        <h2 className="sr-only">Matemática do Valor</h2>
+        <MatematicaValorSection />
 
-      {/* Matemática do Valor */}
-      <h2 className="sr-only">Matemática do Valor</h2>
-      <MatematicaValorSection />
+        {/* Convite Seletivo */}
+        <h2 className="sr-only">Convite Seletivo</h2>
+        <ConviteSeletivoSection />
 
-      {/* Convite Seletivo */}
-      <h2 className="sr-only">Convite Seletivo</h2>
-      <ConviteSeletivoSection />
+        {/* Contato */}
+        <h2 className="sr-only">Contato</h2>
+        <ContatoSection />
 
-      {/* Contato */}
-      <h2 className="sr-only">Contato</h2>
-      <ContatoSection />
-
-      {/* Footer */}
-      <Footer />
+        {/* Footer */}
+        <Footer />
       </main>
     </div>
   );

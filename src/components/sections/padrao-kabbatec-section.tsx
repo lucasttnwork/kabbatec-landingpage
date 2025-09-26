@@ -29,78 +29,68 @@ export function PadraoKabbatecSection() {
   ];
 
   return (
-    <section id="padrao" className="py-32 scroll-reveal">
+    <section id="padrao" className="section py-24 md:py-32">
       <div className="container">
         <div className="max-w-6xl mx-auto">
-          {/* Título */}
-          <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-inter font-light text-white tracking-tight leading-tight mb-8 text-balance">
+          {/* Cabeçalho */}
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-sm sm:text-base text-white/60 font-inter font-light tracking-[0.35em] uppercase mb-6">
+              Padrão Kabbatec
+            </p>
+            <h2 className="text-[36px] sm:text-[44px] lg:text-[52px] font-serif font-light text-white leading-[1.1] tracking-[0.08em] uppercase text-balance">
               Da visão à realidade, sem concessões
             </h2>
-            <p className="text-xl text-white/80 font-inter font-light tracking-tighter max-w-3xl mx-auto leading-relaxed prose-read hyphenate">
-              <span>Existe um padrão que perfeccionistas reconhecem.</span><br />
-              <span>Não é sobre materiais caros — é sobre os materiais certos.</span><br />
-              <span>Não é sobre fazer rápido — é sobre fazer uma vez, perfeito.</span><br />
-              <span>Não é sobre impressionar — é sobre o resultado falar por si.</span>
+            <p className="mt-6 text-base sm:text-lg text-white/70 font-inter font-light leading-relaxed tracking-tight">
+              O refinamento que você imagina se torna tangível com um processo minucioso, decisões transparentes e execução impecável. Cada detalhe importa — e permanece fiel ao que você idealizou.
             </p>
           </div>
 
-          {/* Espaçamento */}
-          <div className="h-20"></div>
-
-          {/* 4 elementos em diagonal (não grid) */}
-          <div className="relative space-y-16">
-            {processSteps.map((step, index) => {
-              // Layout diagonal alternado
-              const isEven = index % 2 === 0;
-              return (
-                <div
-                  key={index}
-                  className={`flex items-center gap-12 ${isEven ? 'flex-row' : 'flex-row-reverse'} justify-center`}
-                >
-                  <div className="flex-shrink-0">
-                    <div className="w-20 h-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                      {typeof step.visual === 'string' ? (
-                        <span className="text-3xl">{step.visual}</span>
-                      ) : (
-                        step.visual
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="flex-1 max-w-lg">
-                    <h3 className="text-2xl lg:text-3xl font-inter font-medium text-white mb-4 tracking-tight">
-                      {step.title}
-                    </h3>
-                    <p className="text-lg text-white/80 font-inter font-light tracking-tighter leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
+          {/* Etapas */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {processSteps.map((step, index) => (
+              <div
+                key={index}
+                className="group rounded-[32px] border border-white/12 bg-white/[0.05] p-10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.08]"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-white">
+                  {typeof step.visual === "string" ? (
+                    <span className="text-3xl">{step.visual}</span>
+                  ) : (
+                    step.visual
+                  )}
                 </div>
-              );
-            })}
+                <h3 className="mt-6 text-xl sm:text-2xl font-inter font-medium text-white tracking-tight">
+                  {step.title}
+                </h3>
+                <p className="mt-3 text-sm sm:text-base text-white/70 font-inter font-light leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            ))}
           </div>
 
-          {/* Espaçamento */}
-          <div className="h-24"></div>
-
-          {/* CTA elegante */}
-          <div className="text-center">
-            <div className="bg-white/5 border border-white/10 p-16 rounded-2xl max-w-4xl mx-auto">
-              <p className="text-2xl text-white/80 font-inter font-light tracking-tighter mb-12 leading-relaxed">
-                Não é sobre fazer rápido — é sobre fazer uma vez, perfeito.
+          {/* CTA */}
+          <div className="mt-20">
+            <div className="rounded-[32px] border border-white/12 bg-white/[0.05] px-8 py-12 sm:px-12 sm:py-16 text-center backdrop-blur-sm">
+              <h3 className="text-2xl sm:text-3xl font-serif font-light text-white tracking-[0.05em] uppercase">
+                Pronto para elevar seu padrão ao nível Kabbatec?
+              </h3>
+              <p className="mt-4 text-base sm:text-lg text-white/70 font-inter font-light leading-relaxed">
+                Vamos transformar sua visão em uma experiência que expresse perfeccionismo em cada toque e superfície.
               </p>
-
-              <Link href="#contato">
-                <Button variant="default" size="lg" className="bg-white text-black hover:bg-white/90 font-inter font-medium tracking-tighter px-8 py-4">
-                  Vamos criar seu padrão
-                </Button>
-              </Link>
+              <div className="mt-10 flex justify-center">
+                <Link href="#contato">
+                  <Button
+                    variant="default"
+                    size="lg"
+                    className="bg-white text-black hover:bg-white/90 font-inter font-medium tracking-[0.08em] px-8 py-4 uppercase"
+                  >
+                    Vamos criar seu padrão
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
-
-          {/* Espaçamento final */}
-          <div className="h-24"></div>
         </div>
       </div>
     </section>

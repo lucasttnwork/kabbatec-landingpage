@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import fernandoImg from "@/../assets/hero_fernando1.png";
 import { Button } from "@/components/ui/button";
 import BlurText from "@/components/ui/blur-text";
 import GlowText from "@/components/ui/glow-text";
@@ -101,7 +100,7 @@ export function HeroSection() {
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-white/3 via-transparent to-transparent" />
               <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_40px_rgba(255,255,255,0.03)] rounded-[1.5rem]" />
               <Image
-                src={fernandoImg}
+                src="/cases/elite-core-1.jpg"
                 alt="Fernando - Kabbatec"
                 width={720}
                 height={920}

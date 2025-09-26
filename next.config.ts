@@ -13,9 +13,11 @@ const nextConfig: NextConfig = {
     domains: [
       'localhost',
       'picsum.photos',
+      'images.unsplash.com',
+      'plus.unsplash.com',
+      'images.pexels.com',
       // Adicionar domínios de CDN quando implementado
       // 'cdn.kabbatec.com',
-      // 'images.unsplash.com',
     ],
 
     // Tamanhos de imagem otimizados
