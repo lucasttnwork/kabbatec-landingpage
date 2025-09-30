@@ -76,22 +76,6 @@ export function HeroSection() {
             </Link>
           </div>
 
-          {/* Trust indicators */}
-          <div className="pt-4 flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-white/70">
-            <div className="relative flex items-center gap-2 px-4 py-2 border border-white/15 shadow-[inset_0_0_20px_rgba(255,255,255,0.12)] bg-white/5 font-inter font-light tracking-wide hover-lift cursor-pointer hover:border-white/25 hover:bg-white/8 transition-all duration-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
-              <span>Elite Core sabia</span>
-            </div>
-            <div className="relative flex items-center gap-2 px-4 py-2 border border-white/15 shadow-[inset_0_0_20px_rgba(255,255,255,0.12)] bg-white/5 font-inter font-light tracking-wide hover-lift cursor-pointer hover:border-white/25 hover:bg-white/8 transition-all duration-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
-              <span>First Move sabia</span>
-            </div>
-            <div className="relative flex items-center gap-2 px-4 py-2 border border-white/15 shadow-[inset_0_0_20px_rgba(255,255,255,0.12)] bg-white/5 font-inter font-light tracking-wide hover-lift cursor-pointer hover:border-white/25 hover:bg-white/8 transition-all duration-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-white/60 shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
-              <span>Two Ases sabia</span>
-            </div>
-          </div>
-
           </div>
 
           {/* Hero Portrait - Fernando */}

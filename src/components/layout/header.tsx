@@ -22,12 +22,6 @@ export function Header() {
           {/* Navigation Desktop */}
           <nav className="hidden md:flex items-center gap-8 text-sm" aria-label="Primária">
             <Link
-              href="#observacao"
-              className="text-zinc-400 hover:text-zinc-100 transition-colors"
-            >
-              Nossa Abordagem
-            </Link>
-            <Link
               href="#cases"
               className="text-zinc-400 hover:text-zinc-100 transition-colors"
             >
@@ -50,7 +44,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <Link href="#contato">
-              <Button variant="outline" size="lg">Conversa Seletiva</Button>
+              <Button variant="outline" size="lg">Converse Conosco</Button>
             </Link>
           </div>
 
@@ -93,13 +87,6 @@ export function Header() {
             <div className="container py-4">
               <nav className="flex flex-col gap-4" aria-label="Primária móvel">
                 <Link
-                  href="#observacao"
-                  className="text-zinc-300 hover:text-white py-2 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Nossa Abordagem
-                </Link>
-                <Link
                   href="#cases"
                   className="text-zinc-300 hover:text-white py-2 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
@@ -114,7 +101,7 @@ export function Header() {
                   Padrão
                 </Link>
                 <Link href="#contato" onClick={() => setIsMenuOpen(false)}>
-                  <Button size="lg" className="mt-4">Conversa Seletiva</Button>
+                  <Button size="lg" className="mt-4">Converse Conosco</Button>
                 </Link>
               </nav>
             </div>

@@ -1,8 +1,3 @@
-"use client";
-
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-
 export function ContatoSection() {
   return (
     <section id="contato" className="section border-t border-zinc-800 bg-zinc-950">
@@ -15,16 +10,8 @@ export function ContatoSection() {
             Vamos construir sua referência em SP
           </h2>
           <p className="mt-4 text-zinc-300">
-            Conte sua visão e receba uma proposta direta, sem rodeios.
+            Conte-nos sua visão e receba uma proposta direta, sem rodeios.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-sm relative z-10">
-            <Link href="mailto:contato@kabbatec.com?subject=Projeto%20Academia%20Personalizada">
-              <Button variant="default" size="lg">Falar com especialista</Button>
-            </Link>
-            <Link href="#cases">
-              <Button variant="secondary" size="lg">Ver padrões de execução</Button>
-            </Link>
-          </div>
         </div>
       </div>
     </section>

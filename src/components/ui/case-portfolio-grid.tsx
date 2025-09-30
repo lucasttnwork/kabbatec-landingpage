@@ -48,24 +48,6 @@ function PortfolioCard({ image, badges, variant }: PortfolioCardProps) {
 
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-transparent opacity-55 transition-opacity duration-500 group-hover:opacity-85" />
 
-        {badges.length > 0 && (
-          <div
-            className={cn(
-              "absolute left-6 right-6 flex flex-wrap gap-2",
-              variant === "large" ? "bottom-8" : "bottom-6",
-            )}
-          >
-            {badges.map((badge) => (
-              <span
-                key={`${variant}-${badge}`}
-                className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-white/80"
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
-        )}
-
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 rounded-[32px] border border-white/10 opacity-0 transition group-hover:opacity-40" />
           <div className="absolute -inset-px rounded-[32px] bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 transition group-hover:opacity-40" />
